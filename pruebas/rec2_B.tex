@@ -14,6 +14,7 @@
 \usepackage[spanish]{babel}
 \usepackage{eurosym}
 %\usepackage[spanish,es-lcroman, es-tabla, es-noshorthands]{babel}
+        \usepackage{pgf}
 
 
 \usepackage[margin=1in]{geometry}
@@ -27,15 +28,15 @@
 \marginpointname{ \emph{\points}}
 
 \usepackage{graphicx}
-\graphicspath{{../img/}} 
+\graphicspath{{../img/}}
 
 \newcommand{\class}{1º Bachillerato CCSS}
 \newcommand{\examdate}{\today}
-\newcommand{\examnum}{Examen final 2ª Evaluación}
-\newcommand{\tipo}{A}
+\newcommand{\examnum}{Recuperación 2ª Evaluación}
+\newcommand{\tipo}{B}
 
 
-\newcommand{\timelimit}{80 minutos}
+\newcommand{\timelimit}{50 minutos}
 
 \renewcommand{\solutiontitle}{\noindent\textbf{Solución:}\enspace}
 
@@ -52,11 +53,11 @@
 \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} }
 \textbf{Nombre:} \makebox[3.5in]{\hrulefill} & \textbf{Fecha:}\makebox[1in]{\hrulefill} \\
  & \\
-\textbf{Tiempo: \timelimit} & Tipo: \tipo 
+\textbf{Tiempo: \timelimit} & Tipo: \tipo
 \end{tabular*}
 \rule[2ex]{\textwidth}{2pt}
-Esta prueba tiene \numquestions\ ejercicios. La puntuación máxima es de \numpoints. 
-La nota final de la prueba será la parte proporcional de la puntuación obtenida sobre la puntuación máxima. 
+Esta prueba tiene \numquestions\ ejercicios. La puntuación máxima es de \numpoints.
+La nota final de la prueba será la parte proporcional de la puntuación obtenida sobre la puntuación máxima.
 
 \begin{center}
 
@@ -70,150 +71,78 @@ La nota final de la prueba será la parte proporcional de la puntuación obtenid
 \rule[2ex]{\textwidth}{2pt}
 
 \begin{questions}
-\question Una oficina bancaria ha tabulado las cantidades de dinero que retiran de sus cuentas 100 clientes jóvenes en
-un determinado día:
 
 
-
-\begin{tabular}{rlr}
+        \question au31e03 - La temperatura media en los meses de invierno en varias ciudades y el gasto medio por habitante en
+calefacción ha sido\\\begin{tabular}{lrrrr}
 \hline
-    & Euros                  &   Clientes \\
+                      &   0 &   1 &   2 &   3 \\
 \hline
-  0 & $\left[0, 40\right)$   &         40 \\
-  1 & $\left[40, 80\right)$  &         35 \\
-  2 & $\left[80, 120\right)$ &         25 \\
+ Temperatura (grados) &  10 &  14 &  17 &  20 \\
+ Gasto (euros)        & 150 & 102 &  55 &  18 \\
 \hline
 \end{tabular}
-
-\begin{parts}
-\part[1] Realizar una tabla de frecuencias con los datos que vayas a necesitar para resolver el ejercicio
-
-\begin{solution}
-
-
-\begin{tabular}{rrrrrrrrrr}
+        \begin{parts} \part[1] Haz una tabla de frecuencias con los datos que necesites para hace el resto de apartados  \begin{solution}   \begin{tabular}{rrrrrr}
 \hline
-    &   lim\_inf &   lim\_sup &   x\_i &   f\_i &   F\_i &   h\_i &    H\_i &   x\_if\_i &   x\^{}2\_if\_i \\
+    &   x &   y &   xy &   x2 &    y2 \\
 \hline
-  0 &         0 &        40 &    20 &    40 &    40 &  0.4  &   0.4  &      800 &      16000 \\
-  1 &        40 &        80 &    60 &    35 &    75 &  0.35 &   0.75 &     2100 &     126000 \\
-  2 &        80 &       120 &   100 &    25 &   100 &  0.25 &   1    &     2500 &     250000 \\
-  3 &       nan &       nan &   nan &   100 &   nan &  1    & nan    &     5400 &     392000 \\
+  0 &  10 & 150 & 1500 &  100 & 22500 \\
+  1 &  14 & 102 & 1428 &  196 & 10404 \\
+  2 &  17 &  55 &  935 &  289 &  3025 \\
+  3 &  20 &  18 &  360 &  400 &   324 \\
+  4 &  61 & 325 & 4223 &  985 & 36253 \\
 \hline
-\end{tabular}
-
-\end{solution}
-\part[1] Calcula la media y la varianza.
-\begin{solution}
-\{'media': 54.0, 'varianza': 1004.0, 'desviación típica': 31.6859590355097\}
-\end{solution}
-\part[1] Calcula la mediana. Ayuda:
-$$P_k=L_i + \frac{k\frac{N}{100}-F_{i-1}}{f_i}\cdot C_i$$
-\begin{solution}
- ${'k': 50, 'N': 100.0, 'L_i': 40.0, 'f_i': 35.0, 'F_{i-1}': 40.0, 'C_i': 40.0}$
- \\
- 51.42857142857143
-\end{solution}
-\part[1] ¿Qué porcentaje de clientes ha retirado menos de 60\euro?
-\begin{solution}
-${'valor': 60, 'N': 100.0, 'L_i': 40.0, 'f_i': 35.0, 'F_{i-1}': 40.0, 'C_i': 40.0}$\\
-57.5
-\end{solution}
-
-\end{parts}
-\question La temperatura media en los meses de invierno en varias ciudades y el gasto medio por habitante en
-calefacción ha sido:\\
-\begin{tabular}{|c||c|c|c|c|c|c|}
-\hline 
-Temperatura (ºC) & 10 & 12 & 14 & 16  \\ 
-\hline 
-Gasto (\euro ) & 150 & 120 & 102 & 90  \\ 
-\hline 
-\end{tabular} 
-\addpoints % to omit double points count
-
-\begin{parts}
-\part[1] ¿Cuál es el gasto medio?
-
-\begin{solution}
-\begin{tabular}{rrrrrr}
-\hline
-    &   x &     y &   xy &   x2 &    y2 \\
-\hline
-  0 &  10 & 150   & 1500 &  100 & 22500 \\
-  1 &  12 & 120   & 1440 &  144 & 14400 \\
-  2 &  14 & 102   & 1428 &  196 & 10404 \\
-  3 &  16 &  90   & 1440 &  256 &  8100 \\
-  \hline
-  4 &  52 & 462   & 5808 &  696 & 55404 \\
-  \hline
-  5 &  13 & 115.5 & 1452 &  174 & 13851 \\
-\hline
-\end{tabular}
-Gasto medio = 115.5
-\end{solution}
-\part[2] Halla el coeficiente de correlación lineal e interprétalo
-\begin{solution}
-covarianza	-49.5 \\
-desvx	2.23606797749979 \\
-desvy	22.599778759979046 \\
-coefcorr -0.9795260923726159 \\
-\end{solution}
-\part[1] Estima el gasto medio por habitante de una ciudad si la temperatura media hubiera sido de 11ºC 
-
-\begin{solution}
-$y = -9.9x + 244.2$ \\
-\includegraphics[scale=.5]{regresion1.png} \\
-Valor estimado para 11: 135.3 \euro 
-
-\end{solution}
-
-
+\end{tabular}   \end{solution} \part[1] Calcula el gasto medio  \begin{solution}   {'media': 81.25}   \end{solution} \part[2] Halla el coeficiente de correlación lineal e interprétalo  \begin{solution}   {'media de x': 15.25, 'desviación de x': 3.6996621467371855, 'media de y': 81.25, 'desviación de y': 49.61539579606314, 'covarianza': -183.3125, 'coeficiente de correlación': -0.9986505695692516}   \end{solution} \part[1] Estima el gasto medio por habitante de una ciudad si la temperatura media hubiera sido 8ºC  \begin{solution}   $y = - 13.3926940639269 x + 285.488584474886$ \\\resizebox {0.3\textwidth}{!}{\input{au31e03.pgf}}\\La estimación para x=8 es: 178.34703196347   \end{solution}
 \end{parts}
 
 
 
-\question Tiramos un dado. Si sale 1 o 2, extraemos una bola de la urna A y si no, la extraemos de la urna B. Siendo la composición de las urnas:
-\begin{itemize}
-\item Urna A: 2 rojas, 2 verdes y 2 azules
-\item Urna B: 1 roja, 3 verdes y 4 azules
-\end{itemize}
+
+\question[2] Una bandeja de doce pimientos de piquillo contiene tres que pican, pero todos tienen el mismo aspecto. Se comen dos pimientos al azar. Cacula:
 %\noaddpoints % to omit double points count
 
 \begin{parts}
-\part[1] ¿Qué probabilidad hay de obtener un 1 o un 2 y extraer
-una bola verde?
-\begin{solution}
-$\frac{1}{9}=0.1111$ 
-\end{solution}
-\part[1] ¿Qué probabilidad hay de obtener 3 y bola azul?
-\begin{solution}
-$\frac{1}{12}=0.08333$
-\end{solution}
+\part La probabilidad de no coger ninguno que pique
+\part  La probabilidad de coger exactamente uno que pique
+\part La probabilidad de coger al menos uno que pique
+\part La probabilidad de que al coger un tercero, éste pique sabiendo que antes he cogido dos que no picaban 
+
 \end{parts}
-
-\question Luis es saltador de altura, y en el 70\% de sus saltos consigue superar los 2.10 m. Sabiendo que en una competición tiene que saltar tres veces, halla la probabilidad de que:
-
-\begin{parts} 
-\part[1]  En todas supere los 2.10 m.  \begin{solution}  $ 0.3430$  \end{solution} 
-\part[1]  No los supere en ninguna  \begin{solution}  $0.02700 $  \end{solution}
-\part[1]  Si su primer salto fue nulo, supere los 2.10 m en, al menos, una ocasión.  \begin{solution}  $0.9100$  \end{solution}
-        \end{parts}
-        
-\question Una moneda se lanza 600 veces. Calcula la probabilidad de que el número de caras: 
-         
-        \begin{parts} \part[2]   sea al menos 301  \begin{solution}  $ (300.0, 12.25, 0.4837, 0.4837)$ \\
-        $[0.0408248290463863, 0.5163, 0.4837]$  \end{solution} 
-        \part[1]  esté entre 290 y 310, ambos incluídos  \begin{solution}  $(300.0, 12.2474, 0.6087, 0.6087)$  \\
-        $ [0.857321409974112, 0.8044, 0.608734130859375]$ \end{solution}
-        \end{parts}
-        
-
-        
+\begin{solution}
+$[6/11, 47/132, 5/11, 3/10]$
+\end{solution}
 
 \addpoints
 
 
+\question Luis juega a los dardos, y en el 65\% de sus lanzamientos obtiene una puntuación superior a 7 puntos. Sabiendo que en una ronda tira tres dardos, halla la probabilidad de que en una ronda:
+%\noaddpoints % to omit double points count
+
+\begin{parts}
+\part[1]  Obtenga más de 7 puntos en todos los lanzamientos  \begin{solution}  $0.2746$  \end{solution}
+\part[1]  No los obtenga en ninguno  \begin{solution}  $0.04287$  \end{solution}
+\part[1]  Si su primer dardo no se clava en la diana, supere los 7 puntos en al menos,
+una ocasión  \begin{solution}  $0.8775$  \end{solution}
+
+
+\end{parts}
+\addpoints
+
+\question Una dado se lanza 1000 veces. Calcula la probabilidad de que haya salido número impar: 
+%\noaddpoints % to omit double points count
+\begin{parts}
+\part[1] Al menos 501 veces
+\begin{solution} $[0.0316227766016838, 0.5126, 0.4874]$
+\\$(500.0, 15.8114, 0.4874, 0.4874)$
+\end{solution}
+
+\part[1] Entre 490 y 510 veces, ambos incluidos
+\begin{solution}$[0.66407830863536, 0.7467, 0.493362426757813]$\\
+$(500.0, 15.8114, 0.4934, 0.4933)$
+\end{solution}
+
+\end{parts}
+\addpoints
 
 
 \end{questions}
@@ -223,6 +152,7 @@ $\frac{1}{12}=0.08333$
 \begin{table}[]
 \Large
 \centering
+
 \caption{Extracto de tabla de probabilidades de la \textbf{normal estándar $Z(0,1)$}}
 \label{my-label}
 
@@ -274,5 +204,6 @@ z   & 0       & 0,01    & 0,02    & 0,03    & 0,04    & 0,05    & 0,06    & 0,07
 \end{table}
 \end{landscape}
 \restoregeometry
-\end{document}
 
+\end{document}
+\grid
