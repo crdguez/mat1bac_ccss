@@ -1,0 +1,107 @@
+
+        \documentclass[spanish, 11pt]{exam}
+
+        %These tell TeX which packages to use.
+        \usepackage{array,epsfig}
+        \usepackage{amsmath, textcomp}
+        \usepackage{amsfonts}
+        \usepackage{amssymb}
+        \usepackage{amsxtra}
+        \usepackage{amsthm}
+        \usepackage{mathrsfs}
+        \usepackage{color}
+        \usepackage{multicol, xparse}
+        \usepackage{verbatim}
+
+
+        \usepackage[utf8]{inputenc}
+        \usepackage[spanish]{babel}
+        \usepackage{eurosym}
+
+        \usepackage{graphicx}
+        \graphicspath{{../img/}}
+        \usepackage{pgf}
+
+
+
+        \printanswers
+        \nopointsinmargin
+        \pointformat{}
+
+        %Pagination stuff.
+        %\setlength{\topmargin}{-.3 in}
+        %\setlength{\oddsidemargin}{0in}
+        %\setlength{\evensidemargin}{0in}
+        %\setlength{\textheight}{9.in}
+        %\setlength{\textwidth}{6.5in}
+        %\pagestyle{empty}
+
+        \let\multicolmulticols\multicols
+        \let\endmulticolmulticols\endmulticols
+        \RenewDocumentEnvironment{multicols}{mO{}}
+         {%
+          \ifnum#1=1
+            #2%
+          \else % More than 1 column
+            \multicolmulticols{#1}[#2]
+          \fi
+         }
+         {%
+          \ifnum#1=1
+          \else % More than 1 column
+            \endmulticolmulticols
+          \fi
+         }
+        \renewcommand{\solutiontitle}{\noindent\textbf{Sol:}\enspace}
+
+        \newcommand{\samedir}{\mathbin{\!/\mkern-5mu/\!}}
+
+        \newcommand{\class}{1º Bachillerato}
+        \newcommand{\examdate}{\today}
+
+        \newcommand{\tipo}{A}
+
+
+        \newcommand{\timelimit}{50 minutos}
+
+
+
+        \pagestyle{head}
+        \firstpageheader{\includegraphics[width=0.2\columnwidth]{header_left}}{\textbf{Departamento de Matemáticas\linebreak \class}\linebreak \examnum}{\includegraphics[width=0.1\columnwidth]{header_right}}
+        \runningheader{\class}{\examnum}{Página \thepage\ of \numpages}
+        \runningheadrule
+
+        \newcommand{\examnum}{Parcial3}
+        \begin{document}
+        \begin{questions}
+        \question ex31e01-0 - Halla el dominio de las siguientes funciones: 
+    
+        \begin{multicols}{1}
+        \begin{parts} \part[1] $f(x)=7x-1$  \begin{solution}   $Dom\left(f \right)=\mathbb{R}$   \end{solution} \part[1] $f(x)=x^3-5x^2+2$  \begin{solution}   $Dom\left(f \right)=\mathbb{R}$   \end{solution} \part[1] $f(x)=\frac{{x - 1}}{{x + 5}}$  \begin{solution}   $Dom\left(f \right)=\left(-\infty, -5\right) \cup \left(-5, \infty\right)$   \end{solution} \part[1] $f(x)=\sqrt[3]{\frac{x + 1}{x - 2}}$  \begin{solution}   $Dom\left(f \right)=\left(-\infty, 2\right) \cup \left(2, \infty\right)$   \end{solution} \part[1] $f(x)=\sqrt {{x^2} - 9}$  \begin{solution}   $Dom\left(f \right)=\left(-\infty, -3\right] \cup \left[3, \infty\right)$   \end{solution} \part[1] $f(x)=\sqrt {2x+3}$  \begin{solution}   $Dom\left(f \right)=\left[- \frac{3}{2}, \infty\right)$   \end{solution}
+        \end{parts}
+        \end{multicols}
+        \question ex31e02-0 - Dadas las funciones $f(x)= (2x-1)/3$ y $g(x)= x^2-3x$. Calcula: 
+    
+        \begin{multicols}{1}
+        \begin{parts} \part[1] $g \circ f$  \begin{solution}   $g{\left (f{\left (x \right )} \right )}=\frac{4 x^{2}}{9} - \frac{22 x}{9} + \frac{10}{9}$   \end{solution} \part[1] $f \circ g$  \begin{solution}   $f{\left (g{\left (x \right )} \right )}=\frac{2 x^{2}}{3} - 2 x - \frac{1}{3}$   \end{solution}
+        \end{parts}
+        \end{multicols}
+        \question ex31e03 - Halla la función inversa de $f(x)$, siendo:
+        \begin{multicols}{1}
+        \begin{parts} \part[1] $f(x)=\frac{3 x - 2}{2}$  \begin{solution}   $f^{-1}(x)=\frac{2 x}{3} + \frac{2}{3}$ \\ $f^{-1} \circ f(x)=x=x$ \\   \end{solution} \part[1] $f(x)=\frac{3 x - 2}{2}$  \begin{solution}   $f^{-1}(x)=\frac{2 x}{3} + \frac{2}{3}$ \\ $f^{-1} \circ f(x)=x=x$ \\   \end{solution} \part[1] $f(x)=\frac{x}{- x + 1}$  \begin{solution}   $f^{-1}(x)=\frac{x}{x + 1}$ \\ $f^{-1} \circ f(x)=\frac{x}{\left(- x + 1\right) \left(\frac{x}{- x + 1} + 1\right)}=x$ \\   \end{solution}
+        \end{parts}
+        \end{multicols}
+        \question ex31e04 - Calcula los siguientes límites:
+        \begin{multicols}{1}
+        \begin{parts} \part[1] $\lim_{x \to -1}\left(x^{2} - 3\right)$  \begin{solution}   $\lim_{x \to -1^-}\left(x^{2} - 3\right)=-2$ y  \\ $\lim_{x \to -1^+}\left(x^{2} - 3\right)=-2$   \end{solution} \part[1] $\lim_{x \to -1}\left(x^{2} - 3\right)$  \begin{solution}   $\lim_{x \to -1^-}\left(x^{2} - 3\right)=-2$ y  \\ $\lim_{x \to -1^+}\left(x^{2} - 3\right)=-2$   \end{solution} \part[1] $\lim_{x \to 0} \frac{1}{x^{2} - x}$  \begin{solution}   $\lim_{x \to 0^-} \frac{1}{x^{2} - x}=\infty$ y  \\ $\lim_{x \to 0^+} \frac{1}{x^{2} - x}=-\infty$   \end{solution}
+        \end{parts}
+        \end{multicols}
+        \question ex31e05 - Estudia la continuidad primero, y después representa gráficamente la siguiente función (se valorará el rigor de la respueta):
+        \begin{multicols}{1}
+        \begin{parts} \part[1] $\begin{cases} x^{2} & \text{for}\: x < 1 \\\frac{3 x}{2} - \frac{1}{2} & \text{otherwise} \end{cases}$  \begin{solution}   Ver gráfica    \end{solution}
+        \end{parts}
+        \end{multicols}
+        
+    \end{questions}
+    \end{document}
+    
