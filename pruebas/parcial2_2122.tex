@@ -1,0 +1,304 @@
+\documentclass[addpoints,spanish, 12pt,a4paper]{exam}
+%\documentclass[answers, spanish, 12pt,a4paper]{exam}
+\printanswers
+\pointpoints{punto}{puntos}
+\hpword{Puntos:}
+\vpword{Puntos:}
+\htword{Total}
+\vtword{Total}
+\hsword{Resultado:}
+\hqword{Ejercicio:}
+\vqword{Ejercicio:}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{eurosym}
+%\usepackage[spanish,es-lcroman, es-tabla, es-noshorthands]{babel}
+
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{multicol}
+\usepackage{yhmath}
+
+\pointsinrightmargin % Para poner las puntuaciones a la derecha. Se puede cambiar. Si se comenta, sale a la izquierda.
+\extrawidth{-2.4cm} %Un poquito más de margen por si ponemos textos largos.
+\marginpointname{ \emph{\points}}
+
+\usepackage{graphicx}
+\graphicspath{{../img/}} 
+
+\newcommand{\class}{1º Bachillerato CCSS}
+\newcommand{\examdate}{\today}
+\newcommand{\examnum}{Examen parcial 2ª evaluación}
+\newcommand{\tipo}{A}
+
+
+\newcommand{\timelimit}{50 minutos}
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Solución:}\enspace}
+
+
+\pagestyle{head}
+\firstpageheader{\includegraphics[width=0.2\columnwidth]{header_left}}{\textbf{Departamento de Matemáticas\linebreak \class}\linebreak \examnum}{\includegraphics[width=0.1\columnwidth]{header_right}}
+\runningheader{\class}{\examnum}{Página \thepage\ of \numpages}
+\runningheadrule
+
+
+\begin{document}
+
+\noindent
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} }
+\textbf{Nombre:} \makebox[3.5in]{\hrulefill} & \textbf{Fecha:}\makebox[1in]{\hrulefill} \\
+ & \\
+\textbf{Tiempo: \timelimit} & Tipo: \tipo 
+\end{tabular*}
+\rule[2ex]{\textwidth}{2pt}
+Esta prueba tiene \numquestions\ ejercicios. La puntuación máxima es de \numpoints. 
+La nota final de la prueba será la parte proporcional de la puntuación obtenida sobre la puntuación máxima. 
+
+\begin{center}
+
+
+\addpoints
+ %\gradetable[h][questions]
+	\pointtable[h][questions]
+\end{center}
+
+\noindent
+\rule[2ex]{\textwidth}{2pt}
+
+\begin{questions}
+
+% \question[1] Se valorará en este apartado el correcto uso de la notación matemática
+
+% \question Una asociación de consumidores ha realizado una prueba sobre la duración de unas bombillas de una conocida marca. Ha mantenido encendidas ininterrumpidamente 100 bombillas  hasta que se han estropeado. Sus resultados han sido:
+
+
+
+% \begin{tabular}{cc}
+% \hline
+%   Duración en días &   Nº de bombillas \\
+% \hline
+%      $\left[36, 42\right)$ &     12      \\
+%      $\left[42, 48\right)$ &     28      \\
+%      $\left[48, 54\right)$ &     45      \\
+%      $\left[54, 60\right)$ &     15      \\
+% \hline
+% \end{tabular}
+
+% \begin{parts}
+% \part[1] Realizar una tabla de frecuencias con los datos que vayas a necesitar para resolver el ejercicio
+
+% \begin{solution}\\
+% \begin{tabular}{rrrrrrrrrr}
+% \hline
+%     &   lim\_inf &   lim\_sup &   x\_i &   f\_i &   F\_i &   h\_i &    H\_i &   x\_if\_i &   x\^{}2\_if\_i \\
+% \hline
+%   0 &        36 &        42 &    39 &    12 &    12 &  0.12 &   0.12 &      468 &      18252 \\
+%   1 &        42 &        48 &    45 &    28 &    40 &  0.28 &   0.4  &     1260 &      56700 \\
+%   2 &        48 &        54 &    51 &    45 &    85 &  0.45 &   0.85 &     2295 &     117045 \\
+%   3 &        54 &        60 &    57 &    15 &   100 &  0.15 &   1    &      855 &      48735 \\
+% \hline
+%   4 &       nan &       nan &   nan &   100 &   nan &  1    & nan    &     4878 &     240732 \\
+% \hline
+% \end{tabular}
+% \end{solution}
+% \part[1] Calcula la media y la varianza.
+% \begin{solution}
+% {'media': 48.78,
+%  'varianza': 27.83159999999998,
+%  'desviación típica': 5.27556632031102}
+% \end{solution}
+% \part[1] Indica razonadamente en qué intervalos se encuentra la moda y la mediana respectivamente. 
+% \begin{solution}
+% \end{solution}
+% \part[2] Calcula la mediana. Ayuda:
+% $$P_k=L_i + \frac{k\frac{N}{100}-F_{i-1}}{f_i}\cdot C_i$$
+% \begin{solution}
+%  ${'k': 50, 'N': 100.0, 'L_i': 48.0, 'f_i': 45.0, 'F_{i-1}': 40.0, 'C_i': 6.0}$ \\
+%  49.333333333333336
+% \end{solution}
+% \part[1] En el anuncio de televisión el fabricante asegura que sus bombillas duran más de 1200 horas. ¿Qué porcentaje de las bombillas no cumple lo enunciado?
+% \begin{solution}
+% ${'valor': 50.0, 'N': 100.0, 'L_i': 48.0, 'f_i': 45.0, 'F_{i-1}': 40.0, 'C_i': 6.0}$\\
+% 45.0
+% \end{solution}
+
+% \end{parts}
+
+
+% \question En una cofradía de pescadores, las capturas registradas de cierta variedad de pescados, en kilogramos,
+% y el precio de subasta en lonja, en euros kg, fueron los siguientes:\\
+% \begin{tabular}{|c||c|c|c|c|c|c|c|}
+% \hline 
+% x (Miles de kg) & 2 & 2.4 & 2.5 & 3 & 2.9 \\ 
+% \hline 
+% y (\euro /kg) & 1.8 & 1.68 & 1.65 & 1.32 & 1.44 \\ 
+% \hline 
+% \end{tabular} 
+% \addpoints % to omit double points count
+
+% \begin{parts}
+% \part[1] ¿Cuál es el precio medio registrado?
+
+% \begin{solution}\\
+% \begin{tabular}{rrrrrr}
+% \hline
+%     &     x &     y &      xy &     x2 &       y2 \\
+% \hline
+%   0 &  2    & 1.8   &  3.6    &  4     &  3.24    \\
+%   1 &  2.4  & 1.68  &  4.032  &  5.76  &  2.8224  \\
+%   2 &  2.5  & 1.65  &  4.125  &  6.25  &  2.7225  \\
+%   3 &  3    & 1.32  &  3.96   &  9     &  1.7424  \\
+%   4 &  2.9  & 1.44  &  4.176  &  8.41  &  2.0736  \\
+% \hline
+%   5 & 12.8  & 7.89  & 19.893  & 33.42  & 12.6009  \\
+% \hline
+%   6 &  2.56 & 1.578 &  3.9786 &  6.684 &  2.52018 \\
+% \hline
+% \end{tabular}\\
+
+% Precio medio = 1.578
+% \end{solution}
+% \part[2] Halla el coeficiente de correlación lineal e interprétalo
+% \begin{solution}
+% covarianza	-0.0610800000000005 \\
+% desvx	0.361109401705356 \\
+% desvy	0.17348198753761 \\
+% coefcorr -0.975002756630295 \\
+% \end{solution}
+% \part[1] Estima el precio que alcanzaría en lonja el kg de una especie si se pescasen 2600 kg 
+
+% \begin{solution}
+% $y=-0.46840490797546x+2.77711656441718$ \\
+% Valor estimado para 2.6: 1.5593 \euro / kg
+
+% \end{solution}
+
+
+% \end{parts}
+
+
+\question Tiramos tres dados equilibrados. Calcula la probabilidad de:
+\begin{parts}
+\part[1] Obtener tres números pares.
+\begin{solution}
+$\frac{1}{8}$
+\end{solution}
+\part[1] Obtener dos treses y un cinco.
+\begin{solution}
+$\frac{1}{72}$
+\end{solution}
+% \part[1] Obtener, al menos. Un número impar.
+% \begin{solution}$\frac{7}{8}$\end{solution}
+\end{parts}
+
+% \question 
+% Tenemos una urna A con 3 bolas blancas, 2 azules y 1 roja, y una urna B con 3 bolas rojas, 1 azul, y 1 blanca. Tiramos un dado. Si sale par, tomamos una bola de la urna A, y si sale impar, tomamos una bola de la urna B.
+% \begin{parts}
+% \part[1] ¿Cuál es la probabilidad de obtener par y una bola azul?
+% \begin{solution}
+% $\frac{1}{6}$
+% \end{solution}
+% \part[1] ¿Cuál es la probabilidad de obtener un 3 y una bola roja?
+% \begin{solution}
+% $\frac{1}{10}$
+% \end{solution}
+% \end{parts}
+
+\question En una bolsa, A, hay 2 bolas negras y 3 rojas. En otra bolsa, B, hay 3 bolas negras, 4 rojas y 3 verdes. Extraemos una bola de A y la introducimos en la bolsa B. Posteriormente, sacamos una bola de B:
+%\noaddpoints % to omit double points count
+
+\begin{parts}
+\part[1] ¿Cuál es la probabilidad de que la segunda bola sea roja?
+\begin{solution}
+$\frac{8}{55}+\frac{2}{11}=\frac{23}{55}$ 
+\end{solution}
+\part[1] ¿Cuál es la probabilidad de que las dos bolas extraídas sean rojas?
+\begin{solution}
+$\frac{3}{11}$
+\end{solution}
+\part[1] ¿Cuál es la probabilidad de que la primera haya sido negra si sabemos que la segunda ha sido roja?
+\begin{solution}
+$\frac{\frac{8}{55}}{\frac{23}{55}}=\frac{8}{23}$
+\end{solution}
+\end{parts}
+
+\addpoints
+
+\question Entre la población de una determinada región se estima que el 55\% presenta obesidad, el 20\% padece
+hipertensión y el 15\% tiene obesidad y es hipertenso.
+\begin{parts}
+\part[1] Calcula la probabilidad de tener obesidad sabiendo que es hipertenso.
+\begin{solution}
+$\frac{15}{20}=\frac{3}{4}$
+\end{solution}
+% \part[1] Calcula la probabilidad de ser hipertenso, sabiendo que no tiene obesidad.
+% \begin{solution}
+% $\frac{5}{45}=\frac{1}{9}$
+% \end{solution}
+\part[1] Calcula la probabilidad de ser hipertenso o tener obesidad.
+\begin{solution}
+$\frac{15+5+40}{100}=\frac{3}{5}$
+\end{solution}
+\end{parts}
+
+
+\question Las notas en Matemáticas, Física y Lengua respectivamente de 3 alumnos de una clase han sido:
+\begin{itemize}
+    \item María: 9, 8 ,6
+    \item Juan: 7, 7, 3
+    \item Luis: 4, 5, 9
+\end{itemize}
+
+\begin{parts}
+% \part[1] Determina el coeficiente de correlación entre las notas de Matemáticas y Física.
+% \begin{solution}
+% \\
+% \begin{tabular}{lrrrrr}
+% \hline
+%         &        x &        y &   $x\cdot y$ &    $x^2$ &   $y^2$ \\
+% \hline
+%  0      &  9       &  8       &           72 &  81      &      64 \\
+%  1      &  7       &  7       &           49 &  49      &      49 \\
+%  2      &  4       &  5       &           20 &  16      &      25 \\
+%  Sumas  & 20       & 20       &          141 & 146      &     138 \\
+%  Medias &  6.66667 &  6.66667 &           47 &  48.6667 &      46 \\
+% \hline
+% \end{tabular}
+% \\ \\ Las medias son: \\$\overline{x}=\frac{\Sigma{x_i}}{N}=\frac{20.0}{3}=6.66666666666667$. $\overline{y}=\frac{\Sigma{y_i}}{N}=\frac{20.0}{3}=6.66666666666667$.  El centro de gravedad es: $(6.66666666666667,6.66666666666667)$ \\ \\ Varianzas y covarianzas: \\ $\sigma_x=\sqrt{\frac{\sum{x_i^2}}{N}-\overline{x}^2}=\sqrt{\frac{146.0}{3}-6.66666666666667^2}=2.05480466765632$.\\ $\sigma_y=\sqrt{\frac{\sum{y_i^2}}{N}-\overline{y}^2}=\sqrt{\frac{138.0}{3}-6.66666666666667^2}=1.24721912892464$.\\ $\sigma_{xy}=\frac{\sum{x_i \cdot y_i}}{N}-\overline{x}\cdot \overline{y}=\frac{141.0}{3}-6.66666666666667\cdot 6.66666666666667=2.55555555555555$. \\ \\ Correlación: \\ $r=\dfrac{\sigma_{xy}}{\sigma_x \cdot \sigma_y}=\frac{2.55555555555555}{2.05480466765632\cdot 1.24721912892464}=0.997176464952739$. \\ \\ Recta de regresión: \\ La pendiente es: 0.605263157894737, la ordenada en el origen: 2.63157894736842, El coeficiente de correlación:0.997176464952738 y la recta de regresión: $y = 0.605263157894737 x + 2.63157894736842$
+% \end{solution}
+\part[1] Determina el coeficiente de correlación entre las notas de Matemáticas y Lengua.
+\begin{solution}
+\\
+\begin{tabular}{lrrrrr}
+\hline
+        &        x &   z &   $x\cdot z$ &    $x^2$ &   $z^2$ \\
+\hline
+ 0      &  9       &   6 &           54 &  81      &      36 \\
+ 1      &  7       &   3 &           21 &  49      &       9 \\
+ 2      &  4       &   9 &           36 &  16      &      81 \\
+ Sumas  & 20       &  18 &          111 & 146      &     126 \\
+ Medias &  6.66667 &   6 &           37 &  48.6667 &      42 \\
+\hline
+\end{tabular}
+\\ \\ Las medias son: \\$\overline{x}=\frac{\Sigma{x_i}}{N}=\frac{20.0}{3}=6.66666666666667$. $\overline{z}=\frac{\Sigma{z_i}}{N}=\frac{18.0}{3}=6.0$.  El centro de gravedad es: $(6.66666666666667,6.0)$ \\ \\ Varianzas y covarianzas: \\ $\sigma_x=\sqrt{\frac{\sum{x_i^2}}{N}-\overline{x}^2}=\sqrt{\frac{146.0}{3}-6.66666666666667^2}=2.05480466765632$.\\ $\sigma_z=\sqrt{\frac{\sum{z_i^2}}{N}-\overline{z}^2}=\sqrt{\frac{126.0}{3}-6.0^2}=2.44948974278318$.\\ $\sigma_{xz}=\frac{\sum{x_i \cdot z_i}}{N}-\overline{x}\cdot \overline{z}=\frac{111.0}{3}-6.66666666666667\cdot 6.0=-3.0$. \\ \\ Correlación: \\ $r=\dfrac{\sigma_{xz}}{\sigma_x \cdot \sigma_z}=\frac{-3.0}{2.05480466765632\cdot 2.44948974278318}=-0.59603956067927$. \\ \\ Recta de regresión: \\ La pendiente es: -0.710526315789474, la ordenada en el origen: 10.7368421052632, El coeficiente de correlación:-0.59603956067927 y la recta de regresión: $y = 10.7368421052632 - 0.710526315789474 x$
+\end{solution}
+\part[1] Interpreta la correlación obtenida.
+\part[2] Ana es una alumna de la clase que ha faltado al examen de Lengua pero sabemos que en Matemáticas tiene un 6. Estima la nota de Lengua a partir de la recta de regresión correspondiente.
+\begin{solution}
+$y = 6.47368421052632$
+\end{solution}
+\part[1] Interpreta el resultado anterior indicando cómo de buena es la estimación.
+\end{parts}
+
+
+
+
+
+
+\end{questions}
+
+\end{document}
+\grid
