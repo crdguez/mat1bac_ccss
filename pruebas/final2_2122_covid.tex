@@ -1,6 +1,6 @@
 \documentclass[addpoints,spanish, 12pt,a4paper]{exam}
 %\documentclass[answers, spanish, 12pt,a4paper]{exam}
-\printanswers
+% \printanswers
 \pointpoints{punto}{puntos}
 \hpword{Puntos:}
 \vpword{Puntos:}
@@ -214,28 +214,28 @@ $y = 8.07894736842105 $
 
         \question Se dispone de dos cajas, la caja A contiene 3 bolas moradas y 2 bolas rojas; mientras que la caja B contiene 4
     bolas moradas y 4 rojas.
-        \begin{multicols}{1}
-        \begin{parts} \part[2] Se escoge una bola cualquiera de la caja A y se pasa a la caja B. Posteriormente se saca una
-    bola de la caja B. ¿Cuál es la probabilidad de que la bola extraída de la caja B sea morada?.   \begin{solution}   $\frac{3}{5}\cdot\frac{5}{9}+\frac{2}{5}\cdot\frac{4}{9}=\frac{23}{45}$   \end{solution} \part[2] Ahora volvemos a la situación original de las cajas. Seleccionamos una caja al azar y se saca una bola 
+        % \begin{multicols}{1}
+        \begin{parts} \part[1] Se escoge una bola cualquiera de la caja A y se pasa a la caja B. Posteriormente se saca una
+    bola de la caja B. ¿Cuál es la probabilidad de que la bola extraída de la caja B sea morada?.   \begin{solution}   $\frac{3}{5}\cdot\frac{5}{9}+\frac{2}{5}\cdot\frac{4}{9}=\frac{23}{45}$   \end{solution} \part[1] Ahora volvemos a la situación original de las cajas. Seleccionamos una caja al azar y se saca una bola 
     que resulta ser roja. ¿Cuál es la probabilidad de que esa
     bola sea de la caja A?  \begin{solution}   $\dfrac{\frac{1}{2}\cdot\frac{2}{5}}{\frac{1}{2}\cdot\frac{2}{5}+\frac{1}{2}\cdot\frac{1}{2}}=\frac{4}{9}$   \end{solution}
         \end{parts}
-        \end{multicols}
+        % \end{multicols}
         
         
-\question Una empresa tiene actualmente dos negocios en marcha, A y B. El negocio A puede llegar a ser más rentable, pero en la cuarta parte de los balances tiene pérdidas. Por el contrario, el 8 parece ser menos rentable pero sus pérdidas llegan solo al 7\% de los casos. En la actualidad, el conjunto de operaciones del negocio B es doble que en el A. De la empresa se elige al azar una operación que tiene pérdidas. Calcula la probabilidad de que sea de una operación del negocio B. 
+\question[2] Una empresa tiene actualmente dos negocios en marcha, A y B. El negocio A puede llegar a ser más rentable, pero en la cuarta parte de los balances tiene pérdidas. Por el contrario, el 8 parece ser menos rentable pero sus pérdidas llegan solo al 7\% de los casos. En la actualidad, el conjunto de operaciones del negocio B es doble que en el A. De la empresa se elige al azar una operación que tiene pérdidas. Calcula la probabilidad de que sea de una operación del negocio B. 
 \begin{solution}
 $P(C)=0.13$ y $P(B|C)=0.35879$
 \end{solution}
 
-\question Una empresa que fabrica discos DVD regrabables cuenta con un departamento de revisión final. Los operarlos, A, B y C se encargan de examinar respectivamente el 30 \%, el 50 \% y el 20 \% del total de las unidades. El operario A ha dejado escapar errores en un 3 \% de las unidades revisadas; el B, en un 1 \%, y el C, en un 2 \%.
+% \question Una empresa que fabrica discos DVD regrabables cuenta con un departamento de revisión final. Los operarlos, A, B y C se encargan de examinar respectivamente el 30 \%, el 50 \% y el 20 \% del total de las unidades. El operario A ha dejado escapar errores en un 3 \% de las unidades revisadas; el B, en un 1 \%, y el C, en un 2 \%.
 
-\begin{parts}
-\part[1] Escogido un disco al azar de entre todos los que se han comercializado, ¿cuál es la probabilidad de que no tenga errores en su acabado?\begin{solution}$0.982000000000000$\end{solution}
-\part[1] ¿Y la probabilidad de que tenga errores en su acabado?\begin{solution}$1-0.982000000000000=0.0180000000000000$\end{solution}
-\part[1] Si un disco destinado ya a la venta no tiene errores en su acabado, ¿cuál es la probabilidad de que lo haya supervisado el operador B?\begin{solution}$0.504073319755601$\end{solution}
-% \part[1] Si un disco destinado ya a la venta tiene un error en su acabado, ¿cuál de los tres operarios tiene más probabilidad de haberlo supervisado?\begin{solution}$ A\to 0.500000000000000, B \to 0.277777777777778, C\to 0.222222222222222$\end{solution}
-\end{parts}
+% \begin{parts}
+% \part[1] Escogido un disco al azar de entre todos los que se han comercializado, ¿cuál es la probabilidad de que no tenga errores en su acabado?\begin{solution}$0.982000000000000$\end{solution}
+% \part[1] ¿Y la probabilidad de que tenga errores en su acabado?\begin{solution}$1-0.982000000000000=0.0180000000000000$\end{solution}
+% \part[1] Si un disco destinado ya a la venta no tiene errores en su acabado, ¿cuál es la probabilidad de que lo haya supervisado el operador B?\begin{solution}$0.504073319755601$\end{solution}
+% % \part[1] Si un disco destinado ya a la venta tiene un error en su acabado, ¿cuál de los tres operarios tiene más probabilidad de haberlo supervisado?\begin{solution}$ A\to 0.500000000000000, B \to 0.277777777777778, C\to 0.222222222222222$\end{solution}
+% \end{parts}
 
 % \question Tiramos un dado. Si sale 1 o 2, extraemos una bola de la urna A y si no, la extraemos de la urna B. Siendo la composición de las urnas:
 % \begin{itemize}
@@ -256,35 +256,35 @@ $P(C)=0.13$ y $P(B|C)=0.35879$
 % \end{solution}
 % \end{parts}
 
-\question En una urna tenemos tres bolas con el número 1, cuatro con el número 2, dos con el número 3, una con el número 4 y dos con el número 5. Sacamos una bola de la urna y anotamos el resultado.
-\begin{parts}
-\part[1] Construye la tabla de la distribución de probabilidad
-\begin{solution}
-$\begin{tabular}{lrlrll}
-% \toprule
-\hline
-{} &   x &     p &  x2 &     xp &     x2p \\
-\hline
-% \midrule
-0    &   1 &   1/4 &   1 &    1/4 &     1/4 \\
-1    &   2 &   1/3 &   4 &    2/3 &     4/3 \\
-2    &   3 &   1/6 &   9 &    1/2 &     3/2 \\
-3    &   4 &  1/12 &  16 &    1/3 &     4/3 \\
-4    &   5 &   1/6 &  25 &    5/6 &    25/6 \\
-\hline
-suma &  15 &     1 &  55 &  31/12 &  103/12 \\
-\hline% \bottomrule
+% \question En una urna tenemos tres bolas con el número 1, cuatro con el número 2, dos con el número 3, una con el número 4 y dos con el número 5. Sacamos una bola de la urna y anotamos el resultado.
+% \begin{parts}
+% \part[1] Construye la tabla de la distribución de probabilidad
+% \begin{solution}
+% $\begin{tabular}{lrlrll}
+% % \toprule
+% \hline
+% {} &   x &     p &  x2 &     xp &     x2p \\
+% \hline
+% % \midrule
+% 0    &   1 &   1/4 &   1 &    1/4 &     1/4 \\
+% 1    &   2 &   1/3 &   4 &    2/3 &     4/3 \\
+% 2    &   3 &   1/6 &   9 &    1/2 &     3/2 \\
+% 3    &   4 &  1/12 &  16 &    1/3 &     4/3 \\
+% 4    &   5 &   1/6 &  25 &    5/6 &    25/6 \\
+% \hline
+% suma &  15 &     1 &  55 &  31/12 &  103/12 \\
+% \hline% \bottomrule
 
-\end{tabular}
-$ \\
+% \end{tabular}
+% $ \\
 
-${1: 1/4, 2: 1/3, 3: 1/6, 4: 1/12, 5: 1/6}$
-\end{solution}
-\part[1] Halla la media y la desviación típica.
-\begin{solution}
-$\frac{31}{12}=2.58333333333333, \sqrt{\frac{103}{12}-{\frac{31}{12}}^2}=1.38192699598142$
-\end{solution}
-\end{parts} 
+% ${1: 1/4, 2: 1/3, 3: 1/6, 4: 1/12, 5: 1/6}$
+% \end{solution}
+% \part[1] Halla la media y la desviación típica.
+% \begin{solution}
+% $\frac{31}{12}=2.58333333333333, \sqrt{\frac{103}{12}-{\frac{31}{12}}^2}=1.38192699598142$
+% \end{solution}
+% \end{parts} 
 
 
 % \question Luis es saltador de altura, y en el 70\% de sus saltos consigue superar los 2.10 m. Sabiendo que en una competición tiene que saltar tres veces, halla la probabilidad de que:
@@ -295,13 +295,13 @@ $\frac{31}{12}=2.58333333333333, \sqrt{\frac{103}{12}-{\frac{31}{12}}^2}=1.38192
 % \part[1]  Si su primer salto fue nulo, supere los 2.10 m en, al menos, una ocasión.  \begin{solution}  $0.9100$  \end{solution}
 %         \end{parts}
 
-\question Juan es saltador de longitud, y en el 75\% de sus saltos consigue superar los 7.50 m. Sabiendo que en una competición tiene que saltar tres veces, halla la probabilidad de que:
+% \question Juan es saltador de longitud, y en el 75\% de sus saltos consigue superar los 7.50 m. Sabiendo que en una competición tiene que saltar tres veces, halla la probabilidad de que:
 
-\begin{parts} 
-\part[1]  En todas supere los 7.50 m.  \begin{solution}  $0.421875$  \end{solution} 
-% \part[1]  No los supere en ninguna  \begin{solution}  $0.015625$  \end{solution}
-\part[1]  Si su primer salto es de 7.55, supere los 7.50 m en, al menos dos ocasiones.  \begin{solution}  $0.9375$  \end{solution}
-        \end{parts}
+% \begin{parts} 
+% \part[1]  En todas supere los 7.50 m.  \begin{solution}  $0.421875$  \end{solution} 
+% % \part[1]  No los supere en ninguna  \begin{solution}  $0.015625$  \end{solution}
+% \part[1]  Si su primer salto es de 7.55, supere los 7.50 m en, al menos dos ocasiones.  \begin{solution}  $0.9375$  \end{solution}
+%         \end{parts}
         
 % \question Una moneda se lanza 600 veces. Calcula la probabilidad de que el número de caras: 
          
@@ -311,17 +311,36 @@ $\frac{31}{12}=2.58333333333333, \sqrt{\frac{103}{12}-{\frac{31}{12}}^2}=1.38192
 %         $ [0.857321409974112, 0.8044, 0.608734130859375]$ \end{solution}
 %         \end{parts}
 
-\question Calcula de la distribución normal estándar $Z \sim N(0, 1)$:
+
+\question El 65\% de los alumnos de un cierto instituto cursan estudios universitarios al terminar el Bachillerato. En un grupo de ocho alumnos elegidos al azar. Calcula:
 \begin{parts}
-\part[1] $P(Z<-1.2)$\begin{solution}$0.115069670221708$\end{solution}
-\part[1] $P(-1.71<Z<-0.2)$\begin{solution}$0.377107354036865$\end{solution}
-\part[1] $k$ tal que $P(Z \geq k)=0.25$\begin{solution}$0.6744897501960817$\end{solution}
+\part[1] La probabilidad de que estudien una carrera alguno de ellos.
+\begin{solution}
+$B(8,0.65) \to P(X>0)=0.9998$
+\end{solution}
+\part[1] La probabilidad de que estudien una carrera más de seis.
+\begin{solution}
+$P(X>6)=0,169$
+
+\end{solution}
+\part[1] La media y la desviación típica
+\begin{solution}
+$5,2$ y $1,35$
+\end{solution}
 \end{parts}
 
-\question[2] Si X es una variable aleatoria $N(12 , 3)$, halla $k$ para que se verifique: $P(X \leq k)=0,1210$
-\begin{solution}
-$8.489992777498564$
-\end{solution}
+
+\question Calcula de la distribución normal estándar $Z \sim N(0, 1)$:
+\begin{parts}
+% \part[1] $P(Z<-1.2)$\begin{solution}$0.115069670221708$\end{solution}
+\part[1] $P(-1.71<Z<-0.2)$\begin{solution}$0.377107354036865$\end{solution}
+\part[1] $k$ tal que $P(k \leq Z \leq k)=0.5$\begin{solution}$0.6744897501960817$\end{solution}
+\end{parts}
+
+% \question[2] Si X es una variable aleatoria $N(12 , 3)$, halla $k$ para que se verifique: $P(X \leq k)=0,1210$
+% \begin{solution}
+% $8.489992777498564$
+% \end{solution}
         
 % \question[2] El 15\% de los estudiantes de un instituto con mejor nota en inglés pueden realizar un intercambio a un país de habla inglesa. Las notas medias finales en inglés se distribuyen normalmente con media 6,5 y desviación típica 0,75. Calcula la nota media mínima que debe obtener un alumno que quiera irse de intercambio.
 % \begin{solution}
