@@ -70,60 +70,90 @@ La nota final de la prueba será la parte proporcional de la puntuación obtenid
 
 \begin{questions}
 
-\question[1] Se valorará en este apartado el correcto uso de la notación matemática tanto de la parte de estadística como de probabilidad
+\question[2] Se valorará en este apartado el correcto uso de la notación matemática tanto de la parte de estadística como de probabilidad
 
-\question Las notas en Matemáticas, Física y Lengua respectivamente de 3 alumnos de una clase han sido:
-\begin{itemize}
-    \item María: 9, 8 ,6
-    \item Juan: 7, 7, 3
-    \item Luis: 4, 5, 9
-\end{itemize}
+\question[2]  Se ha realizado una encuesta preguntando por el número de personas que habitan el hogar familiar y el número de habitaciones que tiene la casa. La tabla siguiente recoge la información obtenida:
 
-\begin{parts}
-\part[1] Determina el coeficiente de correlación entre las notas de Matemáticas y Física.
+\begin{tabular}{|c||c|c|c|c|c|c|c|c|}
+\hline 
+Nº de personas & 3 & 5 & 4 & 6 & 5 & 4  \\ 
+\hline 
+Nº de habitaciones & 2 & 3 & 4 & 4 & 3 & 3 \\ 
+\hline 
+\end{tabular} 
+
+Halla el coeficiente de correlación. ¿Cómo es la relación entre las dos variables?
+
 \begin{solution}
-\\
 \begin{tabular}{lrrrrr}
 \hline
-        &        x &        y &   $x\cdot y$ &    $x^2$ &   $y^2$ \\
+        &    a &        b &   $a\cdot b$ &    $a^2$ &   $b^2$ \\
 \hline
- 0      &  9       &  8       &           72 &  81      &      64 \\
- 1      &  7       &  7       &           49 &  49      &      49 \\
- 2      &  4       &  5       &           20 &  16      &      25 \\
- Sumas  & 20       & 20       &          141 & 146      &     138 \\
- Medias &  6.66667 &  6.66667 &           47 &  48.6667 &      46 \\
+ 0      &  3   &  2       &       6      &   9      &     4   \\
+ 1      &  5   &  3       &      15      &  25      &     9   \\
+ 2      &  4   &  4       &      16      &  16      &    16   \\
+ 3      &  6   &  4       &      24      &  36      &    16   \\
+ 4      &  5   &  3       &      15      &  25      &     9   \\
+ 5      &  4   &  3       &      12      &  16      &     9   \\
+ Sumas  & 27   & 19       &      88      & 127      &    63   \\
+ Medias &  4.5 &  3.16667 &      14.6667 &  21.1667 &    10.5 \\
 \hline
 \end{tabular}
-\\ \\ Las medias son: \\$\overline{x}=\frac{\Sigma{x_i}}{N}=\frac{20.0}{3}=6.66666666666667$. $\overline{y}=\frac{\Sigma{y_i}}{N}=\frac{20.0}{3}=6.66666666666667$.  El centro de gravedad es: $(6.66666666666667,6.66666666666667)$ \\ \\ Varianzas y covarianzas: \\ $\sigma_x=\sqrt{\frac{\sum{x_i^2}}{N}-\overline{x}^2}=\sqrt{\frac{146.0}{3}-6.66666666666667^2}=2.05480466765632$.\\ $\sigma_y=\sqrt{\frac{\sum{y_i^2}}{N}-\overline{y}^2}=\sqrt{\frac{138.0}{3}-6.66666666666667^2}=1.24721912892464$.\\ $\sigma_{xy}=\frac{\sum{x_i \cdot y_i}}{N}-\overline{x}\cdot \overline{y}=\frac{141.0}{3}-6.66666666666667\cdot 6.66666666666667=2.55555555555555$. \\ \\ Correlación: \\ $r=\dfrac{\sigma_{xy}}{\sigma_x \cdot \sigma_y}=\frac{2.55555555555555}{2.05480466765632\cdot 1.24721912892464}=0.997176464952739$. \\ \\ Recta de regresión: \\ La pendiente es: 0.605263157894737, la ordenada en el origen: 2.63157894736842, El coeficiente de correlación:0.997176464952738 y la recta de regresión: $y = 0.605263157894737 x + 2.63157894736842$
+\\ \\ Las medias son: \\$\overline{a}=\frac{\Sigma{a_i}}{N}=\frac{27.0}{6}=4.5$. $\overline{b}=\frac{\Sigma{b_i}}{N}=\frac{19.0}{6}=3.16666666666667$.  El centro de gravedad es: $(4.5,3.16666666666667)$ \\ \\ Varianzas y covarianzas\\ $\sigma_a=\sqrt{\frac{\sum{a_i^2}}{N}-\overline{a}^2}=\sqrt{\frac{127.0}{6}-4.5^2}=0.957427107756339$.\\ $\sigma_b=\sqrt{\frac{\sum{b_i^2}}{N}-\overline{b}^2}=\sqrt{\frac{63.0}{6}-3.16666666666667^2}=0.687184270936277$.\\ $\sigma_{ab}=\frac{\sum{a_i \cdot b_i}}{N}-\overline{a}\cdot \overline{b}=\frac{88.0}{6}-4.5\cdot 3.16666666666667=0.416666666666666$. \\ \\ Correlación\\ $r=\dfrac{\sigma_{ab}}{\sigma_a \cdot \sigma_b}=\frac{0.416666666666666}{0.957427107756339\cdot 0.687184270936277}=0.633300496381122$. \\ \\ Recta de regresión: \\ La pendiente es: 0.454545454545455, la ordenada en el origen: 1.12121212121212, El coeficiente de correlación:0.633300496381124 y la recta de regresión: $y = 0.454545454545455 x + 1.12121212121212$
 \end{solution}
-% \part[1] Determina el coeficiente de correlación entre las notas de Matemáticas y Lengua.
+
+% \question Las notas en Matemáticas, Física y Lengua respectivamente de 3 alumnos de una clase han sido:
+% \begin{itemize}
+%     \item María: 9, 8 ,6
+%     \item Juan: 7, 7, 3
+%     \item Luis: 4, 5, 9
+% \end{itemize}
+
+% \begin{parts}
+% \part[1] Determina el coeficiente de correlación entre las notas de Matemáticas y Física.
 % \begin{solution}
 % \\
 % \begin{tabular}{lrrrrr}
 % \hline
-%         &        x &   z &   $x\cdot z$ &    $x^2$ &   $z^2$ \\
+%         &        x &        y &   $x\cdot y$ &    $x^2$ &   $y^2$ \\
 % \hline
-%  0      &  9       &   6 &           54 &  81      &      36 \\
-%  1      &  7       &   3 &           21 &  49      &       9 \\
-%  2      &  4       &   9 &           36 &  16      &      81 \\
-%  Sumas  & 20       &  18 &          111 & 146      &     126 \\
-%  Medias &  6.66667 &   6 &           37 &  48.6667 &      42 \\
+%  0      &  9       &  8       &           72 &  81      &      64 \\
+%  1      &  7       &  7       &           49 &  49      &      49 \\
+%  2      &  4       &  5       &           20 &  16      &      25 \\
+%  Sumas  & 20       & 20       &          141 & 146      &     138 \\
+%  Medias &  6.66667 &  6.66667 &           47 &  48.6667 &      46 \\
 % \hline
 % \end{tabular}
-% \\ \\ Las medias son: \\$\overline{x}=\frac{\Sigma{x_i}}{N}=\frac{20.0}{3}=6.66666666666667$. $\overline{z}=\frac{\Sigma{z_i}}{N}=\frac{18.0}{3}=6.0$.  El centro de gravedad es: $(6.66666666666667,6.0)$ \\ \\ Varianzas y covarianzas: \\ $\sigma_x=\sqrt{\frac{\sum{x_i^2}}{N}-\overline{x}^2}=\sqrt{\frac{146.0}{3}-6.66666666666667^2}=2.05480466765632$.\\ $\sigma_z=\sqrt{\frac{\sum{z_i^2}}{N}-\overline{z}^2}=\sqrt{\frac{126.0}{3}-6.0^2}=2.44948974278318$.\\ $\sigma_{xz}=\frac{\sum{x_i \cdot z_i}}{N}-\overline{x}\cdot \overline{z}=\frac{111.0}{3}-6.66666666666667\cdot 6.0=-3.0$. \\ \\ Correlación: \\ $r=\dfrac{\sigma_{xz}}{\sigma_x \cdot \sigma_z}=\frac{-3.0}{2.05480466765632\cdot 2.44948974278318}=-0.59603956067927$. \\ \\ Recta de regresión: \\ La pendiente es: -0.710526315789474, la ordenada en el origen: 10.7368421052632, El coeficiente de correlación:-0.59603956067927 y la recta de regresión: $y = 10.7368421052632 - 0.710526315789474 x$
+% \\ \\ Las medias son: \\$\overline{x}=\frac{\Sigma{x_i}}{N}=\frac{20.0}{3}=6.66666666666667$. $\overline{y}=\frac{\Sigma{y_i}}{N}=\frac{20.0}{3}=6.66666666666667$.  El centro de gravedad es: $(6.66666666666667,6.66666666666667)$ \\ \\ Varianzas y covarianzas: \\ $\sigma_x=\sqrt{\frac{\sum{x_i^2}}{N}-\overline{x}^2}=\sqrt{\frac{146.0}{3}-6.66666666666667^2}=2.05480466765632$.\\ $\sigma_y=\sqrt{\frac{\sum{y_i^2}}{N}-\overline{y}^2}=\sqrt{\frac{138.0}{3}-6.66666666666667^2}=1.24721912892464$.\\ $\sigma_{xy}=\frac{\sum{x_i \cdot y_i}}{N}-\overline{x}\cdot \overline{y}=\frac{141.0}{3}-6.66666666666667\cdot 6.66666666666667=2.55555555555555$. \\ \\ Correlación: \\ $r=\dfrac{\sigma_{xy}}{\sigma_x \cdot \sigma_y}=\frac{2.55555555555555}{2.05480466765632\cdot 1.24721912892464}=0.997176464952739$. \\ \\ Recta de regresión: \\ La pendiente es: 0.605263157894737, la ordenada en el origen: 2.63157894736842, El coeficiente de correlación:0.997176464952738 y la recta de regresión: $y = 0.605263157894737 x + 2.63157894736842$
 % \end{solution}
-% \part[1] Interpreta la correlación obtenida.
-% \part[2] Ana es una alumna de la clase que ha faltado al examen de Lengua pero sabemos que en Matemáticas tiene un 6. Estima la nota de Lengua a partir de la recta de regresión correspondiente.
+% % \part[1] Determina el coeficiente de correlación entre las notas de Matemáticas y Lengua.
+% % \begin{solution}
+% % \\
+% % \begin{tabular}{lrrrrr}
+% % \hline
+% %         &        x &   z &   $x\cdot z$ &    $x^2$ &   $z^2$ \\
+% % \hline
+% %  0      &  9       &   6 &           54 &  81      &      36 \\
+% %  1      &  7       &   3 &           21 &  49      &       9 \\
+% %  2      &  4       &   9 &           36 &  16      &      81 \\
+% %  Sumas  & 20       &  18 &          111 & 146      &     126 \\
+% %  Medias &  6.66667 &   6 &           37 &  48.6667 &      42 \\
+% % \hline
+% % \end{tabular}
+% % \\ \\ Las medias son: \\$\overline{x}=\frac{\Sigma{x_i}}{N}=\frac{20.0}{3}=6.66666666666667$. $\overline{z}=\frac{\Sigma{z_i}}{N}=\frac{18.0}{3}=6.0$.  El centro de gravedad es: $(6.66666666666667,6.0)$ \\ \\ Varianzas y covarianzas: \\ $\sigma_x=\sqrt{\frac{\sum{x_i^2}}{N}-\overline{x}^2}=\sqrt{\frac{146.0}{3}-6.66666666666667^2}=2.05480466765632$.\\ $\sigma_z=\sqrt{\frac{\sum{z_i^2}}{N}-\overline{z}^2}=\sqrt{\frac{126.0}{3}-6.0^2}=2.44948974278318$.\\ $\sigma_{xz}=\frac{\sum{x_i \cdot z_i}}{N}-\overline{x}\cdot \overline{z}=\frac{111.0}{3}-6.66666666666667\cdot 6.0=-3.0$. \\ \\ Correlación: \\ $r=\dfrac{\sigma_{xz}}{\sigma_x \cdot \sigma_z}=\frac{-3.0}{2.05480466765632\cdot 2.44948974278318}=-0.59603956067927$. \\ \\ Recta de regresión: \\ La pendiente es: -0.710526315789474, la ordenada en el origen: 10.7368421052632, El coeficiente de correlación:-0.59603956067927 y la recta de regresión: $y = 10.7368421052632 - 0.710526315789474 x$
+% % \end{solution}
+% % \part[1] Interpreta la correlación obtenida.
+% % \part[2] Ana es una alumna de la clase que ha faltado al examen de Lengua pero sabemos que en Matemáticas tiene un 6. Estima la nota de Lengua a partir de la recta de regresión correspondiente.
+% % \begin{solution}
+% % $y = 6.47368421052632$
+% % \end{solution}
+% \part[1] Sonia es una alumna de la clase que ha faltado al examen de Física pero sabemos que en Matemáticas tiene un 9. Estima la nota de Física a partir de la recta de regresión correspondiente.
 % \begin{solution}
-% $y = 6.47368421052632$
+% $y = 8.07894736842105 $
 % \end{solution}
-\part[1] Sonia es una alumna de la clase que ha faltado al examen de Física pero sabemos que en Matemáticas tiene un 9. Estima la nota de Física a partir de la recta de regresión correspondiente.
-\begin{solution}
-$y = 8.07894736842105 $
-\end{solution}
 
-% \part[1] Interpreta el resultado anterior indicando cómo de buena es la estimación.
-\end{parts}
+% % \part[1] Interpreta el resultado anterior indicando cómo de buena es la estimación.
+% \end{parts}
 
 % \question Sean x = “gastos en publicidad de un producto” (en miles de euros) e y = “ventas conseguidas de
 % ese producto” (en miles de euros)\\
@@ -212,21 +242,21 @@ $y = 8.07894736842105 $
 
 % \end{parts}
 
-        \question Se dispone de dos cajas, la caja A contiene 3 bolas moradas y 2 bolas rojas; mientras que la caja B contiene 4
-    bolas moradas y 4 rojas.
-        % \begin{multicols}{1}
-        \begin{parts} \part[1] Se escoge una bola cualquiera de la caja A y se pasa a la caja B. Posteriormente se saca una
-    bola de la caja B. ¿Cuál es la probabilidad de que la bola extraída de la caja B sea morada?.   \begin{solution}   $\frac{3}{5}\cdot\frac{5}{9}+\frac{2}{5}\cdot\frac{4}{9}=\frac{23}{45}$   \end{solution} \part[1] Ahora volvemos a la situación original de las cajas. Seleccionamos una caja al azar y se saca una bola 
-    que resulta ser roja. ¿Cuál es la probabilidad de que esa
-    bola sea de la caja A?  \begin{solution}   $\dfrac{\frac{1}{2}\cdot\frac{2}{5}}{\frac{1}{2}\cdot\frac{2}{5}+\frac{1}{2}\cdot\frac{1}{2}}=\frac{4}{9}$   \end{solution}
-        \end{parts}
-        % \end{multicols}
+    %     \question Se dispone de dos cajas, la caja A contiene 3 bolas moradas y 2 bolas rojas; mientras que la caja B contiene 4
+    % bolas moradas y 4 rojas.
+    %     % \begin{multicols}{1}
+    %     \begin{parts} \part[1] Se escoge una bola cualquiera de la caja A y se pasa a la caja B. Posteriormente se saca una
+    % bola de la caja B. ¿Cuál es la probabilidad de que la bola extraída de la caja B sea morada?.   \begin{solution}   $\frac{3}{5}\cdot\frac{5}{9}+\frac{2}{5}\cdot\frac{4}{9}=\frac{23}{45}$   \end{solution} \part[1] Ahora volvemos a la situación original de las cajas. Seleccionamos una caja al azar y se saca una bola 
+    % que resulta ser roja. ¿Cuál es la probabilidad de que esa
+    % bola sea de la caja A?  \begin{solution}   $\dfrac{\frac{1}{2}\cdot\frac{2}{5}}{\frac{1}{2}\cdot\frac{2}{5}+\frac{1}{2}\cdot\frac{1}{2}}=\frac{4}{9}$   \end{solution}
+    %     \end{parts}
+    %     % \end{multicols}
         
         
-\question[2] Una empresa tiene actualmente dos negocios en marcha, A y B. El negocio A puede llegar a ser más rentable, pero en la cuarta parte de los balances tiene pérdidas. Por el contrario, el B parece ser menos rentable pero sus pérdidas llegan solo al 7\% de los casos. En la actualidad, el conjunto de operaciones del negocio B es doble que en el A. De la empresa se elige al azar una operación que tiene pérdidas. Calcula la probabilidad de que sea de una operación del negocio B. 
-\begin{solution}
-$P(C)=0.13$ y $P(B|C)=0.35879$
-\end{solution}
+% \question[2] Una empresa tiene actualmente dos negocios en marcha, A y B. El negocio A puede llegar a ser más rentable, pero en la cuarta parte de los balances tiene pérdidas. Por el contrario, el B parece ser menos rentable pero sus pérdidas llegan solo al 7\% de los casos. En la actualidad, el conjunto de operaciones del negocio B es doble que en el A. De la empresa se elige al azar una operación que tiene pérdidas. Calcula la probabilidad de que sea de una operación del negocio B. 
+% \begin{solution}
+% $P(C)=0.13$ y $P(B|C)=0.35879$
+% \end{solution}
 
 % \question Una empresa que fabrica discos DVD regrabables cuenta con un departamento de revisión final. Los operarlos, A, B y C se encargan de examinar respectivamente el 30 \%, el 50 \% y el 20 \% del total de las unidades. El operario A ha dejado escapar errores en un 3 \% de las unidades revisadas; el B, en un 1 \%, y el C, en un 2 \%.
 
@@ -237,24 +267,24 @@ $P(C)=0.13$ y $P(B|C)=0.35879$
 % % \part[1] Si un disco destinado ya a la venta tiene un error en su acabado, ¿cuál de los tres operarios tiene más probabilidad de haberlo supervisado?\begin{solution}$ A\to 0.500000000000000, B \to 0.277777777777778, C\to 0.222222222222222$\end{solution}
 % \end{parts}
 
-% \question Tiramos un dado. Si sale 1 o 2, extraemos una bola de la urna A y si no, la extraemos de la urna B. Siendo la composición de las urnas:
-% \begin{itemize}
-% \item Urna A: 2 rojas, 2 verdes y 2 azules
-% \item Urna B: 1 roja, 3 verdes y 4 azules
-% \end{itemize}
-% %\noaddpoints % to omit double points count
+\question Tiramos un dado. Si sale 1 o 2, extraemos una bola de la urna A y si no, la extraemos de la urna B. Siendo la composición de las urnas:
+\begin{itemize}
+\item Urna A: 2 rojas, 2 verdes y 2 azules
+\item Urna B: 1 roja, 3 verdes y 4 azules
+\end{itemize}
+%\noaddpoints % to omit double points count
 
-% \begin{parts}
-% \part[1] ¿Qué probabilidad hay de obtener un 1 o un 2 y extraer
-% una bola verde?
-% \begin{solution}
-% $\frac{1}{9}=0.1111$ 
-% \end{solution}
-% \part[1] ¿Qué probabilidad hay de obtener 3 y bola azul?
-% \begin{solution}
-% $\frac{1}{12}=0.08333$
-% \end{solution}
-% \end{parts}
+\begin{parts}
+\part[1] ¿Qué probabilidad hay de obtener un 1 o un 2 y extraer
+una bola verde?
+\begin{solution}
+$\frac{1}{9}=0.1111$ 
+\end{solution}
+\part[1] ¿Qué probabilidad hay de obtener 3 y bola azul?
+\begin{solution}
+$\frac{1}{12}=0.08333$
+\end{solution}
+\end{parts}
 
 % \question En una urna tenemos tres bolas con el número 1, cuatro con el número 2, dos con el número 3, una con el número 4 y dos con el número 5. Sacamos una bola de la urna y anotamos el resultado.
 % \begin{parts}
@@ -287,13 +317,13 @@ $P(C)=0.13$ y $P(B|C)=0.35879$
 % \end{parts} 
 
 
-% \question Luis es saltador de altura, y en el 70\% de sus saltos consigue superar los 2.10 m. Sabiendo que en una competición tiene que saltar tres veces, halla la probabilidad de que:
+\question Luis es saltador de altura, y en el 70\% de sus saltos consigue superar los 2.10 m. Sabiendo que en una competición tiene que saltar tres veces, halla la probabilidad de que:
 
-% \begin{parts} 
-% \part[1]  En todas supere los 2.10 m.  \begin{solution}  $ 0.3430$  \end{solution} 
-% \part[1]  No los supere en ninguna  \begin{solution}  $0.02700 $  \end{solution}
-% \part[1]  Si su primer salto fue nulo, supere los 2.10 m en, al menos, una ocasión.  \begin{solution}  $0.9100$  \end{solution}
-%         \end{parts}
+\begin{parts} 
+\part[1]  En todas supere los 2.10 m.  \begin{solution}  $ 0.3430$  \end{solution} 
+\part[1]  No los supere en ninguna  \begin{solution}  $0.02700 $  \end{solution}
+\part[1]  Si su primer salto fue nulo, supere los 2.10 m en, al menos, una ocasión.  \begin{solution}  $0.9100$  \end{solution}
+        \end{parts}
 
 % \question Juan es saltador de longitud, y en el 75\% de sus saltos consigue superar los 7.50 m. Sabiendo que en una competición tiene que saltar tres veces, halla la probabilidad de que:
 
@@ -342,12 +372,12 @@ $5,2$ y $1,35$
 % $8.489992777498564$
 % \end{solution}
         
-% \question[2] El 15\% de los estudiantes de un instituto con mejor nota en inglés pueden realizar un intercambio a un país de habla inglesa. Las notas medias finales en inglés se distribuyen normalmente con media 6,5 y desviación típica 0,75. Calcula la nota media mínima que debe obtener un alumno que quiera irse de intercambio.
-% \begin{solution}
-% % import scipy
-% % scipy.stats.norm.ppf(0.85),scipy.stats.norm.ppf(0.85)*0.75+6.5
-% $P(Z<0.85)=k \to k=1.0364333894937898 \to x=k\cdot \sigma + \mu = 7.277325042120342$
-% \end{solution}
+\question[2] Un instituto reparte becas de 200\euro  \  entre el 15\% de los alumnos de un instituto con mejor expediente académico. Las notas medias de los alumnos se distribuyen normalmente con media 6,5 y desviación típica 0,75. Calcula la nota media mínima que debe obtener un alumno si quiere obtener la beca.
+\begin{solution}
+% import scipy
+% scipy.stats.norm.ppf(0.85),scipy.stats.norm.ppf(0.85)*0.75+6.5
+$P(Z<0.85)=k \to k=1.0364333894937898 \to x=k\cdot \sigma + \mu = 7.277325042120342$
+\end{solution}
 
 % \question[2] El 20\% de los alumnos con mejor nota de un instituto pueden acceder a estudios superiores. Las notas medias finales se distribuyen normalmente con media 5,8 y desviación típica 2. Calcula la nota media mínima que debe obtener un alumno que quiera acceder a estudios superiores.
 % \begin{solution}
