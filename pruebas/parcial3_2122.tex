@@ -1,6 +1,6 @@
 \documentclass[addpoints,spanish, 12pt,a4paper]{exam}
 %\documentclass[answers, spanish, 12pt,a4paper]{exam}
-\printanswers
+% \printanswers
 \pointpoints{punto}{puntos}
 \hpword{Puntos:}
 \vpword{Puntos:}
@@ -75,8 +75,14 @@ La nota final de la prueba será la parte proporcional de la puntuación obtenid
 
         \question[3] Halla el dominio de las siguientes funciones: 
     
-        \begin{multicols}{1}
-        \begin{parts} \part $f(x)=7x-1$  \begin{solution}   $Dom\left(f \right)=\mathbb{R}$   \end{solution} \part $f(x)=x^3-5x^2+2$  \begin{solution}   $Dom\left(f \right)=\mathbb{R}$   \end{solution} \part $f(x)=\frac{{x - 1}}{{x + 5}}$  \begin{solution}   $Dom\left(f \right)=\left(-\infty, -5\right) \cup \left(-5, \infty\right)$   \end{solution} \part $f(x)=\sqrt[3]{\frac{x + 1}{x - 2}}$  \begin{solution}   $Dom\left(f \right)=\left(-\infty, 2\right) \cup \left(2, \infty\right)$   \end{solution} \part $f(x)=\sqrt {{x^2} - 9}$  \begin{solution}   $Dom\left(f \right)=\left(-\infty, -3\right] \cup \left[3, \infty\right)$   \end{solution} \part $f(x)=\sqrt {2x+3}$  \begin{solution}   $Dom\left(f \right)=\left[- \frac{3}{2}, \infty\right)$   \end{solution}
+        \begin{multicols}{3}
+        \begin{parts} 
+        % \part $f(x)=7x-1$  \begin{solution}   $Dom\left(f \right)=\mathbb{R}$   \end{solution} 
+        % \part $f(x)=x^3-5x^2+2$  \begin{solution}   $Dom\left(f \right)=\mathbb{R}$   \end{solution} 
+        \part $f(x)=\frac{{x - 1}}{{x + 5}}$  \begin{solution}   $Dom\left(f \right)=\left(-\infty, -5\right) \cup \left(-5, \infty\right)$   \end{solution} 
+        \part $f(x)=\sqrt {{x^2} - 9}$  \begin{solution}   $Dom\left(f \right)=\left(-\infty, -3\right] \cup \left[3, \infty\right)$   \end{solution} 
+        \part $f(x)=\sqrt[3]{\frac{x + 1}{x - 2}}$  \begin{solution}   $Dom\left(f \right)=\left(-\infty, 2\right) \cup \left(2, \infty\right)$   \end{solution} 
+        % \part $f(x)=\sqrt {2x+3}$  \begin{solution}   $Dom\left(f \right)=\left[- \frac{3}{2}, \infty\right)$   \end{solution}
         \end{parts}
         \end{multicols}
         
@@ -102,7 +108,7 @@ La nota final de la prueba será la parte proporcional de la puntuación obtenid
         
         
         
-        \question[2]     Dadas las funciones $f(x)= x^2+5$ y  $g(x)=\frac{x - 1}{x + 3}$. Calcula: 
+        \question[2]     Dadas las funciones $f(x)= x^2+5$,  $g(x)=\dfrac{x - 1}{x + 3}$. Calcula: 
     
         \begin{multicols}{1}
         \begin{parts} \part $g \circ f$  \begin{solution}   $g{\left (f{\left (x \right )} \right )}=\frac{x^{2} + 4}{x^{2} + 8}$   \end{solution} \part $f \circ g$  \begin{solution}   $f{\left (g{\left (x \right )} \right )}=\frac{\left(x - 1\right)^{2}}{\left(x + 3\right)^{2}} + 5$   \end{solution}
@@ -112,37 +118,34 @@ La nota final de la prueba será la parte proporcional de la puntuación obtenid
         
         \question Halla la función inversa de $f(x)$, siendo:
         
-        \begin{parts} \part[1] $f(x)=\frac{3 x - 2}{2}$  \begin{solution}   $f^{-1}(x)=\frac{2 x}{3} + \frac{2}{3}$ \\ $f^{-1} \circ f(x)=x=x$ \\   \end{solution}  \part[1] $f(x)=\frac{x}{- x + 1}$  \begin{solution}   $f^{-1}(x)=\frac{x}{x + 1}$ \\ $f^{-1} \circ f(x)=\frac{x}{\left(- x + 1\right) \left(\frac{x}{- x + 1} + 1\right)}=x$   \end{solution}
+        \begin{parts} \part[1] $f(x)=\dfrac{3 x - 2}{2}$  \begin{solution}   $f^{-1}(x)=\frac{2 x}{3} + \frac{2}{3}$ \\ $f^{-1} \circ f(x)=x=x$ \\   \end{solution}  
+        % \part[1] $f(x)=\frac{x}{- x + 1}$  \begin{solution}   $f^{-1}(x)=\frac{x}{x + 1}$ \\ $f^{-1} \circ f(x)=\frac{x}{\left(- x + 1\right) \left(\frac{x}{- x + 1} + 1\right)}=x$   \end{solution}
         \end{parts}
         
         
         
-        \question Calcula los siguientes límites de manera justificada:
-
-        \begin{parts} \part[1] $$\lim_{x \to -1}\left(x^{2} - 3\right)$$  \begin{solution}   $\lim_{x \to -1^-}\left(x^{2} - 3\right)=-2$ y  \\ $\lim_{x \to -1^+}\left(x^{2} - 3\right)=-2$   \end{solution}  \part[1] $$\lim_{x \to 0} \frac{1}{x^{2} - x}$$  \begin{solution}   $\lim_{x \to 0^-} \frac{1}{x^{2} - x}=\infty$ y  \\ $\lim_{x \to 0^+} \frac{1}{x^{2} - x}=-\infty$   \end{solution}
-        \part[1] $$\lim_{x \to 3} \frac{1}{\left(x-3\right)^2}$$  \begin{solution}   $\lim_{x \to 3^-} \frac{1}{\left(x-3\right)^2}=\infty$ y  \\ $\lim_{x \to 3^+} \frac{1}{\left(x-3\right)^2}=+\infty$  
-        \end{solution}
-        \part[1] $$\lim_{x \to 1}\frac{x^{4} - 3 x^{3} + 2 x^{2}}{x^{4} - 3 x^{3} + 3 x^{2} - x}$$
+        \question[3] Calcula los siguientes límites de manera justificada:
+        \begin{multicols}{2}
+        \begin{parts} 
+        % \part $$\lim_{x \to -1}\left(x^{2} - 3\right)$$  \begin{solution}   $\lim_{x \to -1^-}\left(x^{2} - 3\right)=-2$ y  \\ $\lim_{x \to -1^+}\left(x^{2} - 3\right)=-2$   \end{solution}  
+        \part $$\lim_{x \to 0} \frac{1}{x^{2} - x}$$  \begin{solution}   $\lim_{x \to 0^-} \frac{1}{x^{2} - x}=\infty$ y  \\ $\lim_{x \to 0^+} \frac{1}{x^{2} - x}=-\infty$   \end{solution}
+        % \part $$\lim_{x \to 3} \frac{1}{\left(x-3\right)^2}$$  \begin{solution}   $\lim_{x \to 3^-} \frac{1}{\left(x-3\right)^2}=\infty$ y  \\ $\lim_{x \to 3^+} \frac{1}{\left(x-3\right)^2}=+\infty$  \end{solution}
+        \part $$\lim_{x \to 1}\frac{x^{4} - 3 x^{3} + 2 x^{2}}{x^{4} - 3 x^{3} + 3 x^{2} - x}$$
         \begin{solution}
         $-\infty$
         \end{solution}
-                \part[1] $$\lim_{x \to -\infty}\frac{x^{4} - 3 x^{3} + 2 x^{2}}{x^{4} - 3 x^{3} + 3 x^{2} - x}$$
-        \begin{solution}
-        $1$
-        \end{solution}
+                % \part $$\lim_{x \to -\infty}\frac{x^{4} - 3 x^{3} + 2 x^{2}}{x^{4} - 3 x^{3} + 3 x^{2} - x}$$\begin{solution}$1$\end{solution}
 
-                \part[1] $$\lim_{x \to -\infty}\frac{x^{3} - 3 x^{2} + 2 x}{x^{4} - 3 x^{3} + 3 x^{2} - x}$$
-        \begin{solution}
-        $1$
-        \end{solution}
+                \part $$\lim_{x \to -\infty}\frac{x^{3} - 3 x^{2} + 2 x}{x^{4} - 3 x^{3} + 3 x^{2} - x}$$\begin{solution}$0$\end{solution}
+        % \part $$\lim_{x \to -2}\frac{2 x^{2} + 7 x + 6}{x^{3} + 3 x^{2} + 3 x + 2}$$\begin{solution}   $- \frac{1}{3}$\end{solution}
         \end{parts}
+        \end{multicols}
 
-        \question Estudia la continuidad en $\mathbb{R}$ primero, y después representa gráficamente la siguiente función (se valorará el rigor de la respueta):
+        % \question Estudia la continuidad en $\mathbb{R}$ primero, y después representa gráficamente la siguiente función (se valorará el rigor de la respueta):
+        % \begin{parts} \part[3] $f(x)=\begin{cases} x^{2} &, x < 1 \\\frac{3 x}{2} - \frac{1}{2} & ,x\geq 1 \end{cases}$  \begin{solution}   \resizebox {0.5\textwidth}{!}{\input{parc3ex31e050.pgf}} \\   \end{solution}
+        % \end{parts}
         
-        \begin{parts} \part[3] $f(x)=\begin{cases} x^{2} &, x < 1 \\\frac{3 x}{2} - \frac{1}{2} & ,x\geq 1 \end{cases}$  \begin{solution}   \resizebox {0.5\textwidth}{!}{\input{parc3ex31e050.pgf}} \\   \end{solution}
-        \end{parts}
-        
-
+    \question[1] Estudia, razonadamente y sin representar gráficamente, la continuidad en $\mathbb{R}$ de la función: $$f(x)=\begin{cases} x^{2} &, x < 1 \\\frac{3 x}{2} - \frac{1}{2} & ,x\geq 1 \end{cases}$$
 
 
 \addpoints
