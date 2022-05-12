@@ -1,0 +1,174 @@
+\documentclass[addpoints,spanish, 12pt,a4paper]{exam}
+%\documentclass[answers, spanish, 12pt,a4paper]{exam}
+\printanswers
+\pointpoints{punto}{puntos}
+\hpword{Puntos:}
+\vpword{Puntos:}
+\htword{Total}
+\vtword{Total}
+\hsword{Resultado:}
+\hqword{Ejercicio:}
+\vqword{Ejercicio:}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{eurosym}
+%\usepackage[spanish,es-lcroman, es-tabla, es-noshorthands]{babel}
+
+
+\usepackage{pgf,tikz}
+\usetikzlibrary{shapes, calc, shapes, arrows, math, babel}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{multicol}
+\usepackage{yhmath}
+
+\pointsinrightmargin % Para poner las puntuaciones a la derecha. Se puede cambiar. Si se comenta, sale a la izquierda.
+\extrawidth{-2.4cm} %Un poquito más de margen por si ponemos textos largos.
+\marginpointname{ \emph{\points}}
+
+\usepackage{graphicx}
+\graphicspath{{../img/}} 
+
+\newcommand{\class}{1º Bachillerato CCSS}
+\newcommand{\examdate}{\today}
+\newcommand{\examnum}{Examen parcial 3ª evaluación}
+\newcommand{\tipo}{A}
+
+
+\newcommand{\timelimit}{50 minutos}
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Solución:}\enspace}
+
+
+\pagestyle{head}
+\firstpageheader{\includegraphics[width=0.2\columnwidth]{header_left}}{\textbf{Departamento de Matemáticas\linebreak \class}\linebreak \examnum}{\includegraphics[width=0.1\columnwidth]{header_right}}
+\runningheader{\class}{\examnum}{Página \thepage\ of \numpages}
+\runningheadrule
+
+
+\begin{document}
+
+\noindent
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} }
+\textbf{Nombre:} \makebox[3.5in]{\hrulefill} & \textbf{Fecha:}\makebox[1in]{\hrulefill} \\
+ & \\
+\textbf{Tiempo: \timelimit} & Tipo: \tipo 
+\end{tabular*}
+\rule[2ex]{\textwidth}{2pt}
+Esta prueba tiene \numquestions\ ejercicios. La puntuación máxima es de \numpoints. 
+La nota final de la prueba será la parte proporcional de la puntuación obtenida sobre la puntuación máxima. 
+
+\begin{center}
+
+
+\addpoints
+ %\gradetable[h][questions]
+	\pointtable[h][questions]
+\end{center}
+
+\noindent
+\rule[2ex]{\textwidth}{2pt}
+
+\begin{questions}
+
+        \question[3] Halla el dominio de las siguientes funciones: 
+    
+        \begin{multicols}{1}
+        \begin{parts} \part $f(x)=7x-1$  \begin{solution}   $Dom\left(f \right)=\mathbb{R}$   \end{solution} \part $f(x)=x^3-5x^2+2$  \begin{solution}   $Dom\left(f \right)=\mathbb{R}$   \end{solution} \part $f(x)=\frac{{x - 1}}{{x + 5}}$  \begin{solution}   $Dom\left(f \right)=\left(-\infty, -5\right) \cup \left(-5, \infty\right)$   \end{solution} \part $f(x)=\sqrt[3]{\frac{x + 1}{x - 2}}$  \begin{solution}   $Dom\left(f \right)=\left(-\infty, 2\right) \cup \left(2, \infty\right)$   \end{solution} \part $f(x)=\sqrt {{x^2} - 9}$  \begin{solution}   $Dom\left(f \right)=\left(-\infty, -3\right] \cup \left[3, \infty\right)$   \end{solution} \part $f(x)=\sqrt {2x+3}$  \begin{solution}   $Dom\left(f \right)=\left[- \frac{3}{2}, \infty\right)$   \end{solution}
+        \end{parts}
+        \end{multicols}
+        
+        % \question[2]     Dadas las funciones $f(x)= \frac{2x-1}{3}$ y $g(x)= x^2-3x$. Calcula: 
+    
+        % \begin{multicols}{1}
+        % \begin{parts} \part $g \circ f$  \begin{solution}   $g{\left (f{\left (x \right )} \right )}=\frac{4 x^{2}}{9} - \frac{22 x}{9} + \frac{10}{9}$   \end{solution} \part $f \circ g$  \begin{solution}   $f{\left (g{\left (x \right )} \right )}=\frac{2 x^{2}}{3} - 2 x - \frac{1}{3}$   \end{solution}
+        % \end{parts}
+        % \end{multicols}
+        
+        \question[2] Dada la siguiente función:
+        $$f(x)=\left|-x^2+4x+5\right|$$
+        \begin{parts}
+        \part Define la función anterior como una función a trozos
+        \begin{solution}
+        $\begin{cases} x^{2} - 4 x - 5 & \text{for}\: x < 1 \\- x^{2} + 4 x + 5 & \text{for}\: x < 5 \\x^{2} - 4 x - 5 & \text{otherwise} \end{cases}$
+        \end{solution}
+        \part Representa la función a trozos anterior
+        \begin{solution}
+        \resizebox {0.5\textwidth}{!}{\input{valor_absoluto_cuadratica.pgf}}
+        \end{solution}
+        \end{parts}
+        
+        
+        
+        \question[2]     Dadas las funciones $f(x)= x^2+5$ y  $g(x)=\frac{x - 1}{x + 3}$. Calcula: 
+    
+        \begin{multicols}{1}
+        \begin{parts} \part $g \circ f$  \begin{solution}   $g{\left (f{\left (x \right )} \right )}=\frac{x^{2} + 4}{x^{2} + 8}$   \end{solution} \part $f \circ g$  \begin{solution}   $f{\left (g{\left (x \right )} \right )}=\frac{\left(x - 1\right)^{2}}{\left(x + 3\right)^{2}} + 5$   \end{solution}
+        \end{parts}
+        \end{multicols}
+
+        
+        \question Halla la función inversa de $f(x)$, siendo:
+        
+        \begin{parts} \part[1] $f(x)=\frac{3 x - 2}{2}$  \begin{solution}   $f^{-1}(x)=\frac{2 x}{3} + \frac{2}{3}$ \\ $f^{-1} \circ f(x)=x=x$ \\   \end{solution}  \part[1] $f(x)=\frac{x}{- x + 1}$  \begin{solution}   $f^{-1}(x)=\frac{x}{x + 1}$ \\ $f^{-1} \circ f(x)=\frac{x}{\left(- x + 1\right) \left(\frac{x}{- x + 1} + 1\right)}=x$   \end{solution}
+        \end{parts}
+        
+        
+        
+        \question Calcula los siguientes límites de manera justificada:
+
+        \begin{parts} \part[1] $$\lim_{x \to -1}\left(x^{2} - 3\right)$$  \begin{solution}   $\lim_{x \to -1^-}\left(x^{2} - 3\right)=-2$ y  \\ $\lim_{x \to -1^+}\left(x^{2} - 3\right)=-2$   \end{solution}  \part[1] $$\lim_{x \to 0} \frac{1}{x^{2} - x}$$  \begin{solution}   $\lim_{x \to 0^-} \frac{1}{x^{2} - x}=\infty$ y  \\ $\lim_{x \to 0^+} \frac{1}{x^{2} - x}=-\infty$   \end{solution}
+        \part[1] $$\lim_{x \to 3} \frac{1}{\left(x-3\right)^2}$$  \begin{solution}   $\lim_{x \to 3^-} \frac{1}{\left(x-3\right)^2}=\infty$ y  \\ $\lim_{x \to 3^+} \frac{1}{\left(x-3\right)^2}=+\infty$  
+        \end{solution}
+        \part[1] $$\lim_{x \to 1}\frac{x^{4} - 3 x^{3} + 2 x^{2}}{x^{4} - 3 x^{3} + 3 x^{2} - x}$$
+        \begin{solution}
+        $-\infty$
+        \end{solution}
+                \part[1] $$\lim_{x \to -\infty}\frac{x^{4} - 3 x^{3} + 2 x^{2}}{x^{4} - 3 x^{3} + 3 x^{2} - x}$$
+        \begin{solution}
+        $1$
+        \end{solution}
+
+                \part[1] $$\lim_{x \to -\infty}\frac{x^{3} - 3 x^{2} + 2 x}{x^{4} - 3 x^{3} + 3 x^{2} - x}$$
+        \begin{solution}
+        $1$
+        \end{solution}
+        \end{parts}
+
+        \question Estudia la continuidad en $\mathbb{R}$ primero, y después representa gráficamente la siguiente función (se valorará el rigor de la respueta):
+        
+        \begin{parts} \part[3] $f(x)=\begin{cases} x^{2} &, x < 1 \\\frac{3 x}{2} - \frac{1}{2} & ,x\geq 1 \end{cases}$  \begin{solution}   \resizebox {0.5\textwidth}{!}{\input{parc3ex31e050.pgf}} \\   \end{solution}
+        \end{parts}
+        
+
+
+
+\addpoints
+
+
+
+\end{questions}
+
+\newpage 
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm, scale=0.78]
+\draw [color=lightgray,dash pattern=on 1pt off 1pt, xstep=1cm,ystep=1cm] (-10.6,-10.4) grid (10.1,10.1);
+\draw[<->,color=black] (-10.6,0) -- (10.1,0);
+\foreach \x in {-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10}
+\draw[shift={(\x,0)},color=black] (0pt,1pt) -- (0pt,-1pt) node[below] {\footnotesize $\x$};
+\draw[<->,color=black] (0,-10.43158220601634095) -- (0,10.1);
+\foreach \y in {-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+%\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+%\clip(-0.6129302567150502,-0.43158220601634095) rectangle (9.010648940148005,7.8783927087822985);
+\end{tikzpicture}
+
+
+
+
+
+
+\end{document}
+\grid
