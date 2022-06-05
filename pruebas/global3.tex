@@ -2,6 +2,8 @@
         \documentclass[addpoints,spanish, 12pt,a4paper]{exam}
         %\documentclass[answers, spanish, 12pt,a4paper]{exam}
         
+        %  \printanswers
+        
         \pointpoints{punto}{puntos}
         \hpword{Puntos:}
         \vpword{Puntos:}
@@ -74,15 +76,15 @@
         \extrawidth{-2.4cm} %Un poquito más de margen por si ponemos textos largos.
         \marginpointname{ \emph{\points}}
 
-        \printanswers
+       
             \newcommand{\tipo}{A}\newcommand{\examnum}{Examen Global}
         \begin{document}
-%        \noindent
-%        \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} }
-%        \textbf{Nombre:} \makebox[3.5in]{\hrulefill} & \textbf{Fecha:}\makebox[1in]{\hrulefill} \\
-%         & \\
-%        \textbf{Tiempo: \timelimit} & Tipo: \tipo 
-%        \end{tabular*}
+        \noindent
+        \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} }
+        \textbf{Nombre:} \makebox[3.5in]{\hrulefill} & \textbf{Fecha:}\makebox[1in]{\hrulefill} \\
+        & \\
+        \textbf{Tiempo: \timelimit} & Tipo: \tipo 
+        \end{tabular*}
 %        \rule[2ex]{\textwidth}{2pt}
 %        Esta prueba tiene \numquestions\ ejercicios. La puntuación máxima es de \numpoints. 
 %        La nota final de la prueba será la parte proporcional de la puntuación obtenida sobre la puntuación máxima. 
@@ -91,7 +93,7 @@
 \textbf{Instrucciones:} \begin{itemize}
 \item \textbf{Si solo tienes una evaluación pendiente:} Tienes que hacer \textbf{todos} los ejercicios del bloque correspondiente a la evaluación, incluido el "postre". (4 ejercicios en total). \textbf{Tiempo: 50 minutos}
 \item \textbf{Si tienes más de una pendiente:} Tienes que hacer \textbf{los dos primeros} ejercicios de cada evaluación. (6 ejercicios en total). \textbf{Tiempo: 75 minutos}
-\item \textbf{Si tienes todo aprobado} tienes que hacer de cada evaluación el \textbf{último ejercicio o ejercicio "postre"} y otro a elegir. (6 ejercicios en total) \textbf{Tiempo: 75 minutos}
+\item \textbf{Si tienes todo aprobado} tienes que hacer de cada evaluación el \textbf{último ejercicio o ejercicio "postre"} y otro a elegir \textbf{de los dos primeros}. (6 ejercicios en total) \textbf{Tiempo: 75 minutos}
 \end{itemize}
 \rule[2ex]{\textwidth}{2pt}
 \end{center}
@@ -123,7 +125,7 @@
         \question[1] Simplifica:
         \begin{multicols}{2}
         \begin{parts} \part  $ \sqrt {\sqrt [3]  {{x^2}\sqrt[5] {{x^3}} } } $  \begin{solution}  $ \sqrt[6]{x^{2} \sqrt[5]{x^{3}}} $  \end{solution}
-		 \part  $ \frac{{3{x^2} + 5x - 2}}{{{x^4} + 2{x^2} - 15}}:\frac{{9{x^2} - 6x + 1}}{{{x^4} + 5{x^2}}} $  \begin{solution}  $ \frac{3 x^{3} + 6 x^{2}}{9 x^{3} - 3 x^{2} - 27 x + 9} $\end{solution}
+		 \part  $ \dfrac{{3{x^2} + 5x - 2}}{{{x^4} + 2{x^2} - 15}}:\dfrac{{9{x^2} - 6x + 1}}{{{x^4} + 5{x^2}}} $  \begin{solution}  $ \dfrac{3 x^{3} + 6 x^{2}}{9 x^{3} - 3 x^{2} - 27 x + 9} $\end{solution}
 		 
         \end{parts}
         \end{multicols}
@@ -281,16 +283,20 @@ un televisor:
         \end{parts}
         \end{multicols}
         
- \question[1] Dada $f(x)=x^4-3x^2+5$. Calcula: 
-        \begin{multicols}{1}
-        \begin{parts}
-        \part Dominio de $f(x)$ y su función derivada  \begin{solution}   $-2$ \end{solution} 
-        \part La recta tangente a la función por el punto P(-1,3)  \begin{solution}   $y=2x+5$          
-         \end{solution}
-        
-         
+        \question[1] Halla analíticamente el dominio de las siguientes funciones:
+        \begin{multicols}{3}
+        \begin{parts} \part $f(x)=\sqrt[3]{\frac{x + 2}{x - 3}}$  \begin{solution}   $Dom\left(f \right)=\left(-\infty, 3\right) \cup \left(3, \infty\right)$   \end{solution} \part $f(x)=\sqrt {\frac{x}{2 x^{2} + 2 x - 12}}$  \begin{solution}   $Dom\left(f \right)=\left(-\infty, -3\right) \cup \left(2, \infty\right)$   \end{solution} \part $f(x)=\sqrt {x^2-9}$  \begin{solution}   $Dom\left(f \right)=\left(-\infty, -3\right] \cup \left[3, \infty\right)$   \end{solution}
         \end{parts}
         \end{multicols}
+        
+%  \question[1] Dada $f(x)=x^4-3x^2+5$. Calcula: 
+%         \begin{multicols}{1}
+%         \begin{parts}
+%         \part Dominio de $f(x)$ y su función derivada  \begin{solution}   $-2$ \end{solution} 
+%         \part La recta tangente a la función por el punto P(-1,3)  \begin{solution}   $y=2x+5$          
+%          \end{solution}
+        % \end{parts}
+        % \end{multicols}
         
 %        \question Halla a y b de modo que las siguientes funciones sean continuas:
 %        \begin{multicols}{1}
