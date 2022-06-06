@@ -170,51 +170,83 @@ $=\frac{1}{5}\log {a^3b^2} - \frac{1}{3}\log {a^5b}=\frac{1}{5}\left[3\log a + 2
 
 \section*{2ª Evaluación}
 
-\question[1] Una asociación de consumidores ha realizado una prueba sobre la duración de unas bombillas de una conocida marca. Ha mantenido encendidas ininterrumpidamente 100 bombillas  hasta que se han estropeado. Sus resultados han sido:
-
-
-
-\begin{tabular}{cc}
+        
+        \question[1] Las notas de 4 alumnos en las asignaturas $X$ e $Y$ han sido:
+        
+\begin{tabular}{l|cccc}
+{} &  Ana & Juan  &  Pepe &   Luisa \\
 \hline
-   Duración en días &   Nº de bombillas \\
-\hline
-     $\left[36, 42\right)$ &     12      \\
-     $\left[42, 48\right)$ &     28      \\
-     $\left[48, 54\right)$ &     45      \\
-     $\left[54, 60\right)$ &     15      \\
+X &  5 &  8 &  3 &  10 \\
+Y &  6 &  9 &  2 &  10 \\
 \hline
 \end{tabular}
+\begin{solution}
+        \begin{tabular}{lrrrrr}
+\hline
+        &    x &     y &   $x\cdot y$ &   $x^2$ &   $y^2$ \\
+\hline
+ 0      &  5   &  6    &           30 &    25   &   36    \\
+ 1      &  8   &  9    &           72 &    64   &   81    \\
+ 2      &  3   &  2    &            6 &     9   &    4    \\
+ 3      & 10   & 10    &          100 &   100   &  100    \\
+ Sumas  & 26   & 27    &          208 &   198   &  221    \\
+ Medias &  6.5 &  6.75 &           52 &    49.5 &   55.25 \\
+\hline
+\end{tabular}
+\\ \\ Las medias son: \\$\overline{x}=\frac{\Sigma{x_i}}{N}=\frac{26.0}{4}=6.5$. $\overline{y}=\frac{\Sigma{y_i}}{N}=\frac{27.0}{4}=6.75$.  El centro de gravedad es: $(6.5,6.75)$ \\ \\ Varianzas y covarianzas\\ $\sigma_x=\sqrt{\frac{\sum{x_i^2}}{N}-\overline{x}^2}=\sqrt{\frac{198.0}{4}-6.5^2}=2.69258240356725$.\\ $\sigma_y=\sqrt{\frac{\sum{y_i^2}}{N}-\overline{y}^2}=\sqrt{\frac{221.0}{4}-6.75^2}=3.11247489949718$.\\ $\sigma_{xy}=\frac{\sum{x_i \cdot y_i}}{N}-\overline{x}\cdot \overline{y}=\frac{208.0}{4}-6.5\cdot 6.75=8.125$. \\ \\ Correlación\\ $r=\dfrac{\sigma_{xy}}{\sigma_x \cdot \sigma_y}=\frac{8.125}{2.69258240356725\cdot 3.11247489949718}=0.969501551920812$. \\ \\ Recta de regresión: \\ La pendiente es: 1.12068965517241, la ordenada en el origen: -0.534482758620689, El coeficiente de correlación:0.969501551920812 y la recta de regresión: $y = 1.12068965517241 x - 0.534482758620689$.
+$y(7)=7.31034482758618$
+\end{solution}
 
 \begin{parts}
-
-\part Calcula la media, la mediana y la varianza. Ayuda:
-$$P_k=L_i + \frac{k\frac{N}{100}-F_{i-1}}{f_i}\cdot C_i$$
-\begin{solution}\begin{tabular}{rrrrrrrrrr}
-\hline
-    &   lim\_inf &   lim\_sup &   x\_i &   f\_i &   F\_i &   h\_i &    H\_i &   x\_if\_i &   x\^{}2\_if\_i \\
-\hline
-  0 &        36 &        42 &    39 &    12 &    12 &  0.12 &   0.12 &      468 &      18252 \\
-  1 &        42 &        48 &    45 &    28 &    40 &  0.28 &   0.4  &     1260 &      56700 \\
-  2 &        48 &        54 &    51 &    45 &    85 &  0.45 &   0.85 &     2295 &     117045 \\
-  3 &        54 &        60 &    57 &    15 &   100 &  0.15 &   1    &      855 &      48735 \\
-\hline
-  4 &       nan &       nan &   nan &   100 &   nan &  1    & nan    &     4878 &     240732 \\
-\hline
-\end{tabular}\\
-{'media': 48.78,
- 'varianza': 27.83159999999998,
- 'desviación típica': 5.27556632031102}\\
-  ${'k': 50, 'N': 100.0, 'L_i': 48.0, 'f_i': 45.0, 'F_{i-1}': 40.0, 'C_i': 6.0}$ \\
- 49.333333333333336
-\end{solution}
-
-\part En el anuncio de televisión el fabricante asegura que sus bombillas duran más de 50 días ininterrumpidamente. ¿Qué porcentaje de las bombillas no cumple lo enunciado?
-\begin{solution}
-${'valor': 50.0, 'N': 100.0, 'L_i': 48.0, 'f_i': 45.0, 'F_{i-1}': 40.0, 'C_i': 6.0}$\\
-52.6041666666668
-\end{solution}
-
+    \part Calcula las medias y desviaciones típicas de las asignaturas $X$ e $Y$
+    \part Obtén la recta de regresión de Y sobre X y estima con ella la nota correspondiente a la asignatura $Y$ de in alumno que ha sacado un 7 en la asignatura $X$.
 \end{parts}
+
+% \question[1] Una asociación de consumidores ha realizado una prueba sobre la duración de unas bombillas de una conocida marca. Ha mantenido encendidas ininterrumpidamente 100 bombillas  hasta que se han estropeado. Sus resultados han sido:
+
+
+
+% \begin{tabular}{cc}
+% \hline
+%   Duración en días &   Nº de bombillas \\
+% \hline
+%      $\left[36, 42\right)$ &     12      \\
+%      $\left[42, 48\right)$ &     28      \\
+%      $\left[48, 54\right)$ &     45      \\
+%      $\left[54, 60\right)$ &     15      \\
+% \hline
+% \end{tabular}
+
+% \begin{parts}
+
+% \part Calcula la media, la mediana y la varianza. Ayuda:
+% $$P_k=L_i + \frac{k\frac{N}{100}-F_{i-1}}{f_i}\cdot C_i$$
+% \begin{solution}\begin{tabular}{rrrrrrrrrr}
+% \hline
+%     &   lim\_inf &   lim\_sup &   x\_i &   f\_i &   F\_i &   h\_i &    H\_i &   x\_if\_i &   x\^{}2\_if\_i \\
+% \hline
+%   0 &        36 &        42 &    39 &    12 &    12 &  0.12 &   0.12 &      468 &      18252 \\
+%   1 &        42 &        48 &    45 &    28 &    40 &  0.28 &   0.4  &     1260 &      56700 \\
+%   2 &        48 &        54 &    51 &    45 &    85 &  0.45 &   0.85 &     2295 &     117045 \\
+%   3 &        54 &        60 &    57 &    15 &   100 &  0.15 &   1    &      855 &      48735 \\
+% \hline
+%   4 &       nan &       nan &   nan &   100 &   nan &  1    & nan    &     4878 &     240732 \\
+% \hline
+% \end{tabular}\\
+% {'media': 48.78,
+%  'varianza': 27.83159999999998,
+%  'desviación típica': 5.27556632031102}\\
+%   ${'k': 50, 'N': 100.0, 'L_i': 48.0, 'f_i': 45.0, 'F_{i-1}': 40.0, 'C_i': 6.0}$ \\
+%  49.333333333333336
+% \end{solution}
+
+% \part En el anuncio de televisión el fabricante asegura que sus bombillas duran más de 50 días ininterrumpidamente. ¿Qué porcentaje de las bombillas no cumple lo enunciado?
+% \begin{solution}
+% ${'valor': 50.0, 'N': 100.0, 'L_i': 48.0, 'f_i': 45.0, 'F_{i-1}': 40.0, 'C_i': 6.0}$\\
+% 52.6041666666668
+% \end{solution}
+
+% \end{parts}
 
 
 \question[1] Tiramos un dado. Si sale par, extraemos una bola de la urna A y si no, la extraemos de la urna B. Siendo la composición de las urnas:
@@ -246,12 +278,12 @@ veces:
         \part Calcula la probabilidad de que enceste 4  \begin{solution}   $P{\left(X = 4 \right)}=0.36015$   \end{solution} \part Calcula la probabilidad de que enceste al menos 1  \begin{solution}   $P{\left(X \geq 1 \right)}=0.99757$   \end{solution} \part Calcula la probabilidad de que enceste más de 4  \begin{solution}   $P{\left(X > 4 \right)}=0.16807$   \end{solution}
         \end{parts}
 
-\question \textbf{Ejercicio "postre":} La duración media de un televisor es de 10 años con una desviación típica igual a 2 años. Si la
+\question[1] \textbf{Ejercicio "postre":} La duración media de un televisor es de 10 años con una desviación típica igual a 2 años. Si la
 vida útil del electrodoméstico se distribuye normalmente, halla la probabilidad de que al comprar
 un televisor: 
     
         
-        \begin{parts}  \part[1]  Este dure más de 12 años  \begin{solution}   $P{\left(X \geq 12 \right)}=0.158655253931457$   \end{solution} \part[2]  Este dure entre 8 y 12 años  \begin{solution}   $P{\left(X \geq 8 \wedge X \leq 12 \right)}=0.682689492137086$   \end{solution}
+        \begin{parts}  \part  Este dure más de 12 años  \begin{solution}   $P{\left(X \geq 12 \right)}=0.158655253931457$   \end{solution} \part  Este dure entre 8 y 12 años  \begin{solution}   $P{\left(X \geq 8 \wedge X \leq 12 \right)}=0.682689492137086$   \end{solution}
         \end{parts}
 
 
@@ -274,9 +306,10 @@ un televisor:
         \begin{multicols}{2}
         \begin{parts}
         \part $$\lim_{x \to 1}\left(\frac{x^{2} + 1}{x^{3} + 2 x + 3}\right)$$  \begin{solution}   $ 1/3$ \end{solution} 
-        \part $$\lim_{x \to -1}\left(\frac{x^{2} - 1}{x^{2} + 3 x + 2}\right)$$  \begin{solution}   $-2$ \end{solution}
-        \part $$\lim_{x \to \infty}\left(- x + \sqrt{x^{2} + x + 1}\right)$$  \begin{solution}   $\frac{1}{2}$          
-         \end{solution}
+        % \part $$\lim_{x \to -1}\left(\frac{x^{2} - 1}{x^{2} + 3 x + 2}\right)$$  \begin{solution}   $-2$ \end{solution}
+        \part $$\lim_{x \to -1}\left(\frac{1 - x^{2}}{2x^{2} + 6 x + 4}\right)$$  \begin{solution}   $1$ \end{solution}
+        % \part $$\lim_{x \to \infty}\left(- x + \sqrt{x^{2} + x + 1}\right)$$  \begin{solution}   $\frac{1}{2}$          \end{solution}
+        \part $$\lim_{x \to \infty}\left(\dfrac{x^{2} - 1}{x} - \dfrac{2 x^{2} + 1}{2 x - 1}\right)$$\begin{solution}$-\frac{1}{2}$\end{solution}
          \part La derivada de $y=\dfrac{3 x^{2} + 1}{\left(x - 1\right)^{2}}$  \begin{solution}   $y'=- \frac{6 x + 2}{x^{3} - 3 x^{2} + 3 x - 1}$   \end{solution} 
          
          
@@ -284,8 +317,9 @@ un televisor:
         \end{multicols}
         
         \question[1] Halla analíticamente el dominio de las siguientes funciones:
-        \begin{multicols}{3}
-        \begin{parts} \part $f(x)=\sqrt[3]{\frac{x + 2}{x - 3}}$  \begin{solution}   $Dom\left(f \right)=\left(-\infty, 3\right) \cup \left(3, \infty\right)$   \end{solution} \part $f(x)=\sqrt {\frac{x}{2 x^{2} + 2 x - 12}}$  \begin{solution}   $Dom\left(f \right)=\left(-\infty, -3\right) \cup \left(2, \infty\right)$   \end{solution} \part $f(x)=\sqrt {x^2-9}$  \begin{solution}   $Dom\left(f \right)=\left(-\infty, -3\right] \cup \left[3, \infty\right)$   \end{solution}
+        \begin{multicols}{2}
+        \begin{parts} \part $f(x)=\sqrt[3]{\dfrac{x + 2}{x - 3}}$  \begin{solution}   $Dom\left(f \right)=\left(-\infty, 3\right) \cup \left(3, \infty\right)$   \end{solution} \part $f(x)=\sqrt {\dfrac{x}{2 x^{2} + 2 x - 12}}$  \begin{solution}   $Dom\left(f \right)=\left(-\infty, -3\right) \cup \left(2, \infty\right)$   \end{solution} 
+        % \part $f(x)=\sqrt {x^2-9}$  \begin{solution}   $Dom\left(f \right)=\left(-\infty, -3\right] \cup \left[3, \infty\right)$   \end{solution}
         \end{parts}
         \end{multicols}
         
@@ -310,7 +344,13 @@ un televisor:
 %        \end{parts}
 %        \end{multicols}
         
-                \question[1] \textbf{Ejercicio "postre":} Dada la función:$$f(x)=\frac{- x^{2} - x + 3}{x^{2} + x - 2}$$ calcula:
+        %         \question[1] \textbf{Ejercicio "postre":} Dada la función:$$f(x)=\frac{- x^{2} - x + 3}{x^{2} + x - 2}$$ calcula:
+        % \begin{multicols}{1}
+        % \begin{parts} \part Dominio de $f(x)$  \begin{solution}   $Dom(f)=\left(-\infty, -2\right) \cup \left(-2, 1\right) \cup \left(1, \infty\right)$\\  \end{solution} \part Asíntotas verticales, horizontales y oblicuas, en caso que existan  \begin{solution}   Asíntotas:\\A.V. $x=-2$\\, A.V. $x=1$\\A.H. $y=-1$\\A.H. $y=-1$\\A.O. $y=-1$ \\A.O. $y=-1$ \\   \end{solution}
+        % \end{parts}
+        % \end{multicols}
+        
+        \question[1] \textbf{Ejercicio "postre":} Dada la función:$$f(x)=\frac{x^{3}}{x^2 + 1}$$ calcula analíticamente:
         \begin{multicols}{1}
         \begin{parts} \part Dominio de $f(x)$  \begin{solution}   $Dom(f)=\left(-\infty, -2\right) \cup \left(-2, 1\right) \cup \left(1, \infty\right)$\\  \end{solution} \part Asíntotas verticales, horizontales y oblicuas, en caso que existan  \begin{solution}   Asíntotas:\\A.V. $x=-2$\\, A.V. $x=1$\\A.H. $y=-1$\\A.H. $y=-1$\\A.O. $y=-1$ \\A.O. $y=-1$ \\   \end{solution}
         \end{parts}
@@ -327,12 +367,14 @@ un televisor:
     \end{questions}
     
     
-    \newgeometry{left=1 cm,bottom=2cm}
-\begin{landscape}
-\begin{table}[]
-\Large
+\newgeometry{left=1 cm,bottom=2cm}
+% \begin{landscape}
+\begin{table}
+% \Large
 \centering
-\caption{Extracto de tabla de probabilidades de la \textbf{normal estándar $Z(0,1)$}}
+
+% \caption{Extracto de tabla de probabilidades de la \textbf{normal estándar $Z(0,1)$}}
+\caption{Tabla de probabilidades de la \textbf{normal estándar $Z(0,1)$}}
 \label{my-label}
 
 \begin{tabular}{l|llllllllll}
@@ -349,39 +391,39 @@ z   & 0       & 0,01    & 0,02    & 0,03    & 0,04    & 0,05    & 0,06    & 0,07
 0,8 & 0,78814 & 0,79103 & 0,79389 & 0,79673 & 0,79955 & 0,80234 & 0,80511 & 0,80785 & 0,81057 & 0,81327 \\
 0,9 & 0,81594 & 0,81859 & 0,82121 & 0,82381 & 0,82639 & 0,82894 & 0,83147 & 0,83398 & 0,83646 & 0,83891 \\
 1   & 0,84134 & 0,84375 & 0,84614 & 0,84849 & 0,85083 & 0,85314 & 0,85543 & 0,85769 & 0,85993 & 0,86214 \\
-%1,1 & 0,86433 & 0,8665  & 0,86864 & 0,87076 & 0,87286 & 0,87493 & 0,87698 & 0,879   & 0,881   & 0,88298 \\
-%1,2 & 0,88493 & 0,88686 & 0,88877 & 0,89065 & 0,89251 & 0,89435 & 0,89617 & 0,89796 & 0,89973 & 0,90147 \\
-%1,3 & 0,9032  & 0,9049  & 0,90658 & 0,90824 & 0,90988 & 0,91149 & 0,91309 & 0,91466 & 0,91621 & 0,91774 \\
-%1,4 & 0,91924 & 0,92073 & 0,9222  & 0,92364 & 0,92507 & 0,92647 & 0,92785 & 0,92922 & 0,93056 & 0,93189 \\
-%1,5 & 0,93319 & 0,93448 & 0,93574 & 0,93699 & 0,93822 & 0,93943 & 0,94062 & 0,94179 & 0,94295 & 0,94408 \\
-%1,6 & 0,9452  & 0,9463  & 0,94738 & 0,94845 & 0,9495  & 0,95053 & 0,95154 & 0,95254 & 0,95352 & 0,95449 \\
-%1,7 & 0,95543 & 0,95637 & 0,95728 & 0,95818 & 0,95907 & 0,95994 & 0,9608  & 0,96164 & 0,96246 & 0,96327 \\
-%1,8 & 0,96407 & 0,96485 & 0,96562 & 0,96638 & 0,96712 & 0,96784 & 0,96856 & 0,96926 & 0,96995 & 0,97062 \\
-%1,9 & 0,97128 & 0,97193 & 0,97257 & 0,9732  & 0,97381 & 0,97441 & 0,975   & 0,97558 & 0,97615 & 0,9767  \\
-%2   & 0,97725 & 0,97778 & 0,97831 & 0,97882 & 0,97932 & 0,97982 & 0,9803  & 0,98077 & 0,98124 & 0,98169 \\
-%2,1 & 0,98214 & 0,98257 & 0,983   & 0,98341 & 0,98382 & 0,98422 & 0,98461 & 0,985   & 0,98537 & 0,98574 \\
-%2,2 & 0,9861  & 0,98645 & 0,98679 & 0,98713 & 0,98745 & 0,98778 & 0,98809 & 0,9884  & 0,9887  & 0,98899 \\
-%2,3 & 0,98928 & 0,98956 & 0,98983 & 0,9901  & 0,99036 & 0,99061 & 0,99086 & 0,99111 & 0,99134 & 0,99158 \\
-%2,4 & 0,9918  & 0,99202 & 0,99224 & 0,99245 & 0,99266 & 0,99286 & 0,99305 & 0,99324 & 0,99343 & 0,99361 \\
-%2,5 & 0,99379 & 0,99396 & 0,99413 & 0,9943  & 0,99446 & 0,99461 & 0,99477 & 0,99492 & 0,99506 & 0,9952  \\
-%2,6 & 0,99534 & 0,99547 & 0,9956  & 0,99573 & 0,99585 & 0,99598 & 0,99609 & 0,99621 & 0,99632 & 0,99643 \\
-%2,7 & 0,99653 & 0,99664 & 0,99674 & 0,99683 & 0,99693 & 0,99702 & 0,99711 & 0,9972  & 0,99728 & 0,99736 \\
-%2,8 & 0,99744 & 0,99752 & 0,9976  & 0,99767 & 0,99774 & 0,99781 & 0,99788 & 0,99795 & 0,99801 & 0,99807 \\
-%2,9 & 0,99813 & 0,99819 & 0,99825 & 0,99831 & 0,99836 & 0,99841 & 0,99846 & 0,99851 & 0,99856 & 0,99861 \\
-%3   & 0,99865 & 0,99869 & 0,99874 & 0,99878 & 0,99882 & 0,99886 & 0,99889 & 0,99893 & 0,99896 & 0,999   \\
-%3,1 & 0,99903 & 0,99906 & 0,9991  & 0,99913 & 0,99916 & 0,99918 & 0,99921 & 0,99924 & 0,99926 & 0,99929 \\
-%3,2 & 0,99931 & 0,99934 & 0,99936 & 0,99938 & 0,9994  & 0,99942 & 0,99944 & 0,99946 & 0,99948 & 0,9995  \\
-%3,3 & 0,99952 & 0,99953 & 0,99955 & 0,99957 & 0,99958 & 0,9996  & 0,99961 & 0,99962 & 0,99964 & 0,99965 \\
-%3,4 & 0,99966 & 0,99968 & 0,99969 & 0,9997  & 0,99971 & 0,99972 & 0,99973 & 0,99974 & 0,99975 & 0,99976 \\
-%3,5 & 0,99977 & 0,99978 & 0,99978 & 0,99979 & 0,9998  & 0,99981 & 0,99981 & 0,99982 & 0,99983 & 0,99983 \\
-%3,6 & 0,99984 & 0,99985 & 0,99985 & 0,99986 & 0,99986 & 0,99987 & 0,99987 & 0,99988 & 0,99988 & 0,99989 \\
-%3,7 & 0,99989 & 0,9999  & 0,9999  & 0,9999  & 0,99991 & 0,99991 & 0,99992 & 0,99992 & 0,99992 & 0,99992 \\
-%3,8 & 0,99993 & 0,99993 & 0,99993 & 0,99994 & 0,99994 & 0,99994 & 0,99994 & 0,99995 & 0,99995 & 0,99995 \\
-%3,9 & 0,99995 & 0,99995 & 0,99996 & 0,99996 & 0,99996 & 0,99996 & 0,99996 & 0,99996 & 0,99997 & 0,99997 \\
-%4   & 0,99997 & 0,99997 & 0,99997 & 0,99997 & 0,99997 & 0,99997 & 0,99998 & 0,99998 & 0,99998 & 0,99998
+1,1 & 0,86433 & 0,8665  & 0,86864 & 0,87076 & 0,87286 & 0,87493 & 0,87698 & 0,879   & 0,881   & 0,88298 \\
+1,2 & 0,88493 & 0,88686 & 0,88877 & 0,89065 & 0,89251 & 0,89435 & 0,89617 & 0,89796 & 0,89973 & 0,90147 \\
+1,3 & 0,9032  & 0,9049  & 0,90658 & 0,90824 & 0,90988 & 0,91149 & 0,91309 & 0,91466 & 0,91621 & 0,91774 \\
+1,4 & 0,91924 & 0,92073 & 0,9222  & 0,92364 & 0,92507 & 0,92647 & 0,92785 & 0,92922 & 0,93056 & 0,93189 \\
+1,5 & 0,93319 & 0,93448 & 0,93574 & 0,93699 & 0,93822 & 0,93943 & 0,94062 & 0,94179 & 0,94295 & 0,94408 \\
+1,6 & 0,9452  & 0,9463  & 0,94738 & 0,94845 & 0,9495  & 0,95053 & 0,95154 & 0,95254 & 0,95352 & 0,95449 \\
+1,7 & 0,95543 & 0,95637 & 0,95728 & 0,95818 & 0,95907 & 0,95994 & 0,9608  & 0,96164 & 0,96246 & 0,96327 \\
+1,8 & 0,96407 & 0,96485 & 0,96562 & 0,96638 & 0,96712 & 0,96784 & 0,96856 & 0,96926 & 0,96995 & 0,97062 \\
+1,9 & 0,97128 & 0,97193 & 0,97257 & 0,9732  & 0,97381 & 0,97441 & 0,975   & 0,97558 & 0,97615 & 0,9767  \\
+2   & 0,97725 & 0,97778 & 0,97831 & 0,97882 & 0,97932 & 0,97982 & 0,9803  & 0,98077 & 0,98124 & 0,98169 \\
+2,1 & 0,98214 & 0,98257 & 0,983   & 0,98341 & 0,98382 & 0,98422 & 0,98461 & 0,985   & 0,98537 & 0,98574 \\
+2,2 & 0,9861  & 0,98645 & 0,98679 & 0,98713 & 0,98745 & 0,98778 & 0,98809 & 0,9884  & 0,9887  & 0,98899 \\
+2,3 & 0,98928 & 0,98956 & 0,98983 & 0,9901  & 0,99036 & 0,99061 & 0,99086 & 0,99111 & 0,99134 & 0,99158 \\
+2,4 & 0,9918  & 0,99202 & 0,99224 & 0,99245 & 0,99266 & 0,99286 & 0,99305 & 0,99324 & 0,99343 & 0,99361 \\
+2,5 & 0,99379 & 0,99396 & 0,99413 & 0,9943  & 0,99446 & 0,99461 & 0,99477 & 0,99492 & 0,99506 & 0,9952  \\
+2,6 & 0,99534 & 0,99547 & 0,9956  & 0,99573 & 0,99585 & 0,99598 & 0,99609 & 0,99621 & 0,99632 & 0,99643 \\
+2,7 & 0,99653 & 0,99664 & 0,99674 & 0,99683 & 0,99693 & 0,99702 & 0,99711 & 0,9972  & 0,99728 & 0,99736 \\
+2,8 & 0,99744 & 0,99752 & 0,9976  & 0,99767 & 0,99774 & 0,99781 & 0,99788 & 0,99795 & 0,99801 & 0,99807 \\
+2,9 & 0,99813 & 0,99819 & 0,99825 & 0,99831 & 0,99836 & 0,99841 & 0,99846 & 0,99851 & 0,99856 & 0,99861 \\
+3   & 0,99865 & 0,99869 & 0,99874 & 0,99878 & 0,99882 & 0,99886 & 0,99889 & 0,99893 & 0,99896 & 0,999   \\
+3,1 & 0,99903 & 0,99906 & 0,9991  & 0,99913 & 0,99916 & 0,99918 & 0,99921 & 0,99924 & 0,99926 & 0,99929 \\
+3,2 & 0,99931 & 0,99934 & 0,99936 & 0,99938 & 0,9994  & 0,99942 & 0,99944 & 0,99946 & 0,99948 & 0,9995  \\
+3,3 & 0,99952 & 0,99953 & 0,99955 & 0,99957 & 0,99958 & 0,9996  & 0,99961 & 0,99962 & 0,99964 & 0,99965 \\
+3,4 & 0,99966 & 0,99968 & 0,99969 & 0,9997  & 0,99971 & 0,99972 & 0,99973 & 0,99974 & 0,99975 & 0,99976 \\
+3,5 & 0,99977 & 0,99978 & 0,99978 & 0,99979 & 0,9998  & 0,99981 & 0,99981 & 0,99982 & 0,99983 & 0,99983 \\
+3,6 & 0,99984 & 0,99985 & 0,99985 & 0,99986 & 0,99986 & 0,99987 & 0,99987 & 0,99988 & 0,99988 & 0,99989 \\
+3,7 & 0,99989 & 0,9999  & 0,9999  & 0,9999  & 0,99991 & 0,99991 & 0,99992 & 0,99992 & 0,99992 & 0,99992 \\
+3,8 & 0,99993 & 0,99993 & 0,99993 & 0,99994 & 0,99994 & 0,99994 & 0,99994 & 0,99995 & 0,99995 & 0,99995 \\
+3,9 & 0,99995 & 0,99995 & 0,99996 & 0,99996 & 0,99996 & 0,99996 & 0,99996 & 0,99996 & 0,99997 & 0,99997 \\
+4   & 0,99997 & 0,99997 & 0,99997 & 0,99997 & 0,99997 & 0,99997 & 0,99998 & 0,99998 & 0,99998 & 0,99998
 \end{tabular}
 \end{table}
-\end{landscape}
+% \end{landscape}
 \restoregeometry
     \end{document}
     
